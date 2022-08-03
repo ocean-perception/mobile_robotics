@@ -35,36 +35,30 @@ sequens!
 
 ## Your Robot Layout
 
-Depending on your course, you will be using 1 of 3 possible robots: 
+Click on the side-bar for more information on your specific robot. Depending on your course, you will be using 1 of 3 possible robots: 
 
 {{< columns >}}
 ### Robotic Vessel
 
-Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
-olivae sensit **arma sorori** deducit, inesset **crudus**, ego vetuere aliis,
-modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies
+The Robotic Vessel will consist of a kit with the vessel components, electronic components and the Rasberry pi with a pihat installed. The kit will be able to orient its posisitoning with motor movement and remote localisation.
 
 <--->
 
 ### Pitop Rover
 
-Ea _furtique_ risere fratres edidit terrae magis. Colla tam mihi tenebat:
-miseram excita suadent es pecudes iam. Concilio _quam_ velatus posset ait quod
-nunc! Fragosis suae dextra geruntur functus vulgata.
+The Pitop Rover consists of an assembly kit and a rasberry pi with Pitop's version of linux installed. The kit should be straight forward to assemble. Libraries for odometry and motor movement are pre-installed on the Pitops. [Assembly tutorial](https://www.pi-top.com/start/pi-top-4) will show you how to install the Pi inside the Pitop. Remember that the Pitop needs a minimum of 36 watts to be able to charge.
 
 <--->
 
 ### Thymio Rover 
 
+The Thymio Rover uses a Rasberry Pi 3. It also uses a ROS as a midware in order to bridge communication between the rasberry pi and the motors, unfortunately it does not contain encoders and therefore will necessitate a stronger emphasis on the lidar sensor provided. The kit will come fully assmbled.
 
 {{< /columns >}}
 
 
 ## Where to start?
 
-Idmoniae ripis, at aves, ali missa adest, ut _et autem_, et ab?
-
-{{< button relref="/intelligent_mobile_robotics" >}}Intelligent mobile robotics{{< /button >}}
-{{< button relref="/maritime_robotics" >}}Maritime robotics{{< /button >}}
+Once Everything is succesfully assembled, (follow the assembly page), you may start exploring the programming page. If the pi has not yet been pre-configured with the correct libraries, look at the 'configure pi' page and ask a professor for help.
 
 
