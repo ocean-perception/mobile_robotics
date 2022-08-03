@@ -5,7 +5,7 @@ weight: 1
 bookFlatSection: true
 ---
 
-# Welcome to mobile robotics
+# Welcome
 
 <!-- Find examples here https://hugo-book-demo.netlify.app/ -->
 {{< button href="https://hugo-book-demo.netlify.app/" >}}View demo book{{< /button >}}
