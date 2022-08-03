@@ -1,6 +1,6 @@
 ---
 title: Programming
-weight: 1  # sets order
+weight: 7  # sets order
 ---
 
 # Programming

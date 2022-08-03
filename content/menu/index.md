@@ -10,5 +10,6 @@ headless: true
 - [Maritime robotics]({{< relref "/maritime_robotics" >}})
   - [Platform]({{< relref "/maritime_robotics/platform" >}})
 - [External localisation]({{< relref "/external_localisation" >}})
+- [Configure pi]({{< relref "/configure_pi/" >}})
 <br />
 <br />
