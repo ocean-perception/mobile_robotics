@@ -15,7 +15,7 @@ What requirement are needed? #  Ea furtique risere fratres edidit terrae magis. 
 <link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
 <script defer src=/mobile_robotics/flexsearch.min.js></script>
-<script defer src=/mobile_robotics/en.search.min.834be7c9872c95c6de2642573a1372c2e78776a980cc3951361e03c8b37fae35.js integrity="sha256-g0vnyYcslcbeJkJXOhNywueHdqmAzDlRNh4DyLN/rjU=" crossorigin=anonymous></script>
+<script defer src=/mobile_robotics/en.search.min.c991a1e5ad113a6523bd5bac138d2bedae5c3a30e148b61599f1ad7fbb5246db.js integrity="sha256-yZGh5a0ROmUjvVusE40r7a5cOjDhSLYVmfGtf7tSRts=" crossorigin=anonymous></script>
 <script defer src=/mobile_robotics/sw.min.9f9f0314a35cee6ec643afeaa4a88ac163499fab5bd5713684e8fe5d39c0d88c.js integrity="sha256-n58DFKNc7m7GQ6/qpKiKwWNJn6tb1XE2hOj+XTnA2Iw=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/index.xml title="Mobile Robotics documentation">
 </head>
@@ -57,7 +57,9 @@ What requirement are needed? #  Ea furtique risere fratres edidit terrae magis. 
 </ul>
 </li>
 <li>
-<a href=/mobile_robotics/external_localisation/>External localisation</a>
+<a href=/mobile_robotics/external_localisation/>External localisation</a></li>
+<li>
+<a href=/mobile_robotics/configure_pi/>Configure pi</a>
 </li>
 </ul>
 </nav>
@@ -127,50 +129,40 @@ if (backup + system) {
 Your Robot Layout
 <a class=anchor href=#your-robot-layout>#</a>
 </h2>
-<p>Depending on your course, you will be using 1 of 3 possible robots:</p>
+<p>Click on the side-bar for more information on your specific robot. Depending on your course, you will be using 1 of 3 possible robots:</p>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <h3 id=robotic-vessel>
 Robotic Vessel
 <a class=anchor href=#robotic-vessel>#</a>
 </h3>
-<p>Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
-olivae sensit <strong>arma sorori</strong> deducit, inesset <strong>crudus</strong>, ego vetuere aliis,
-modo arsit? Utinam rapta fiducia valuere litora <em>adicit cursu</em>, ad facies
+<p>The Robotic Vessel will consist of a kit with the vessel components, electronic components and the Rasberry pi with a pihat installed. The kit will be able to orient its posisitoning with motor movement and remote localisation.
 </div>
 <div class="flex-even markdown-inner">
 <h3 id=pitop-rover>
 Pitop Rover
 <a class=anchor href=#pitop-rover>#</a>
 </h3>
-<p>Ea <em>furtique</em> risere fratres edidit terrae magis. Colla tam mihi tenebat:
-miseram excita suadent es pecudes iam. Concilio <em>quam</em> velatus posset ait quod
-nunc! Fragosis suae dextra geruntur functus vulgata.
+<p>The Pitop Rover consists of an assembly kit and a rasberry pi with Pitop&rsquo;s version of linux installed. The kit should be straight forward to assemble. Libraries for odometry and motor movement are pre-installed on the Pitops.
+<a href=https://www.pi-top.com/start/pi-top-4>Assembly tutorial</a> will show you how to install the Pi inside the Pitop. Remember that the Pitop needs a minimum of 36 watts to be able to charge.
 </div>
 <div class="flex-even markdown-inner">
 <h3 id=thymio-rover>
 Thymio Rover
 <a class=anchor href=#thymio-rover>#</a>
 </h3>
+<p>The Thymio Rover uses a Rasberry Pi 3. It also uses a ROS as a midware in order to bridge communication between the rasberry pi and the motors, unfortunately it does not contain encoders and therefore will necessitate a stronger emphasis on the lidar sensor provided. The kit will come fully assmbled.
 </div>
 </div>
 <h2 id=where-to-start>
 Where to start?
 <a class=anchor href=#where-to-start>#</a>
 </h2>
-<p>Idmoniae ripis, at aves, ali missa adest, ut <em>et autem</em>, et ab?</p>
-<p>
-<a href=/mobile_robotics/intelligent_mobile_robotics/ class=book-btn>
-Intelligent mobile robotics
-</a>
-<a href=/mobile_robotics/maritime_robotics/ class=book-btn>
-Maritime robotics
-</a>
-</p>
+<p>Once Everything is succesfully assembled, (follow the assembly page), you may start exploring the programming page. If the pi has not yet been pre-configured with the correct libraries, look at the &lsquo;configure pi&rsquo; page and ask a professor for help.</p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/b19560765420947361fb09d47f1e4bcb4ae37879 title="Last modified by flaviogheri | Aug 3, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/9e7ee49fe80fbe3a55db599f552342f0272cd924 title="Last modified by flaviogheri | Aug 3, 2022" target=_blank rel=noopener>
 <img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
 <span>Aug 3, 2022</span>
 </a>
