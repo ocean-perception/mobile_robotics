@@ -1,7 +1,9 @@
 # Mobile Robotics
 [![github pages](https://github.com/ocean-perception/mobile_robotics/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/ocean-perception/mobile_robotics/actions/workflows/gh-pages.yml) [![CC BY 4.0][cc-by-shield]][cc-by]
 
-This is a documentation webpage that gets automatically built after every push using [Hugo](https://gohugo.io/) with a [hugo-book](https://github.com/alex-shpak/hugo-book) theme.
+This is a documentation webpage that gets automatically built after every push using [Hugo](https://gohugo.io/) with a [hugo-book](https://github.com/alex-shpak/hugo-book) theme at https://ocean-perception.github.io/mobile_robotics/
+
+[**<h2>View the live page here</h2>**](https://ocean-perception.github.io/mobile_robotics/)
 
 ## How to build it locally
  1. [Install Hugo](https://gohugo.io/getting-started/installing/) in your machine
