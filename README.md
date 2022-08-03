@@ -1,5 +1,5 @@
 # Mobile Robotics
-[![CC BY 4.0][cc-by-shield]][cc-by]
+[![github pages](https://github.com/ocean-perception/mobile_robotics/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/ocean-perception/mobile_robotics/actions/workflows/gh-pages.yml) [![CC BY 4.0][cc-by-shield]][cc-by]
 
 This is a documentation webpage that gets automatically built after every push using [Hugo](https://gohugo.io/) with a [hugo-book](https://github.com/alex-shpak/hugo-book) theme.
 
