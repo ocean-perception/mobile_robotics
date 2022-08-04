@@ -3,7 +3,7 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content="Chrony Configuration #  Chrony is an implementation of NTP, it allows for the pi&rsquo;s to synchronize their time even if internet is not connected to one of them. It acts as a daemon in the background. So when setup it should never need to be reconfigured or edited with afterwards.
-Client Configuration (student Pi) #  Go in the Pi terminal type &lsquo;sudo apt-get install vim-y&rsquo; to install vim, (a unix text editor) make sure you are connecting to the correct router on the rasberry pi, then to find your ip type &lsquo;ip a | grep inet&rsquo;, and copy the third line with &lsquo;inet&rsquo;, (may differ: should read something such as &lsquo;10.">
+Server Configuration (Camera system Pi) #   Install an editor of your choice (nano, vim, gedit), for example for vim you would write  sudo apt install vim Install chrony with  sudo apt install chrony TBD  Client Configuration (student Raspberry Pi) #   Install an editor of your choice (nano, vim, gedit), for example for vim you would write  sudo apt install vim Install chrony with  sudo apt install chrony Find or ask the IP address of the chrony server in the local network (the wifi router network).">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="configure_pi">
 <meta property="og:description" content>
@@ -14,7 +14,7 @@ Client Configuration (student Pi) #  Go in the Pi terminal type &lsquo;sudo apt-
 <link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
 <script defer src=/mobile_robotics/flexsearch.min.js></script>
-<script defer src=/mobile_robotics/en.search.min.c991a1e5ad113a6523bd5bac138d2bedae5c3a30e148b61599f1ad7fbb5246db.js integrity="sha256-yZGh5a0ROmUjvVusE40r7a5cOjDhSLYVmfGtf7tSRts=" crossorigin=anonymous></script>
+<script defer src=/mobile_robotics/en.search.min.bb44753c5eaa287674616e232b6d1db35eb5502a367eb6c35a4f4b30689c4911.js integrity="sha256-u0R1PF6qKHZ0YW4jK20ds161UCo2frbDWk9LMGicSRE=" crossorigin=anonymous></script>
 <script defer src=/mobile_robotics/sw.min.9f9f0314a35cee6ec643afeaa4a88ac163499fab5bd5713684e8fe5d39c0d88c.js integrity="sha256-n58DFKNc7m7GQ6/qpKiKwWNJn6tb1XE2hOj+XTnA2Iw=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/configure_pi/index.xml title="Mobile Robotics documentation">
 </head>
@@ -79,8 +79,8 @@ Client Configuration (student Pi) #  Go in the Pi terminal type &lsquo;sudo apt-
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#client-configuration-student-pi>Client Configuration (student Pi)</a></li>
 <li><a href=#server-configuration-camera-system-pi>Server Configuration (Camera system Pi)</a></li>
+<li><a href=#client-configuration-student-raspberry-pi>Client Configuration (student Raspberry Pi)</a></li>
 </ul>
 </nav>
 </aside>
@@ -90,29 +90,52 @@ Chrony Configuration
 <a class=anchor href=#chrony-configuration>#</a>
 </h1>
 <p>Chrony is an implementation of NTP, it allows for the pi&rsquo;s to synchronize their time even if internet is not connected to one of them. It acts as a daemon in the background. So when setup it should never need to be reconfigured or edited with afterwards.</p>
-<h2 id=client-configuration-student-pi>
-Client Configuration (student Pi)
-<a class=anchor href=#client-configuration-student-pi>#</a>
-</h2>
-<p>Go in the Pi terminal
-type &lsquo;sudo apt-get install vim-y&rsquo; to install vim, (a unix text editor)
-make sure you are connecting to the correct router on the rasberry pi, then to find your ip type &lsquo;ip a | grep inet&rsquo;, and copy the third line with &lsquo;inet&rsquo;, (may differ: should read something such as &lsquo;10.10.20.153/24&rsquo;, only copy the fist section, in this case that would be &lsquo;10.10.20.153&rsquo;
-type &lsquo;vim /etc/chrony/chrony.conf&rsquo;</p>
-<p>Below the initial comment, (above all other code) write in a new line: &lsquo;server &lt;copied_ip> iburst prefer&rsquo; where &lt;copied_ip> is the item you have just copied
-then finally save the document by pressing Ctrl + C, typing &lsquo;:x&rsquo; and pressing Enter.
-(you should have now returned to the original terminal window)
-then type &lsquo;systemctl restart chrony&rsquo;
-to check if the server is working, type: &lsquo;chronyc sources&rsquo;</p>
 <h2 id=server-configuration-camera-system-pi>
 Server Configuration (Camera system Pi)
 <a class=anchor href=#server-configuration-camera-system-pi>#</a>
 </h2>
-</article>
+<ol>
+<li>Install an editor of your choice (nano, vim, gedit), for example for <code>vim</code> you would write</li>
+</ol>
+<pre tabindex=0><code>sudo apt install vim
+</code></pre><ol start=2>
+<li>Install chrony with</li>
+</ol>
+<pre tabindex=0><code>sudo apt install chrony
+</code></pre><ol start=3>
+<li>TBD</li>
+</ol>
+<h2 id=client-configuration-student-raspberry-pi>
+Client Configuration (student Raspberry Pi)
+<a class=anchor href=#client-configuration-student-raspberry-pi>#</a>
+</h2>
+<ol>
+<li>Install an editor of your choice (nano, vim, gedit), for example for <code>vim</code> you would write</li>
+</ol>
+<pre tabindex=0><code>sudo apt install vim
+</code></pre><ol start=2>
+<li>Install chrony with</li>
+</ol>
+<pre tabindex=0><code>sudo apt install chrony
+</code></pre><ol start=4>
+<li>Find or ask the IP address of the chrony server in the local network (the wifi router network). It should be something like <code>192.168.0.X</code>, where the last <code>X</code> will change for a number 0-254.</li>
+<li>Edit chrony configuration, and add the following line at the top of the file</li>
+</ol>
+<pre tabindex=0><code>server 192.168.0.X
+</code></pre><p>where <code>X</code> has to be changed for the correct IP. The file is located at <code>/etc/chrony/chrony.conf</code>. To edit it, you will need to use <code>sudo</code>, for example:</p>
+<pre tabindex=0><code>sudo vi /etc/chrony/chrony.conf
+</code></pre><ol start=6>
+<li>Verify that you can get the updates. First restart chrony with</li>
+</ol>
+<pre tabindex=0><code>sudo systemctl restart chrony
+</code></pre><p>and now verify that chrony is using your IP by running the command</p>
+<pre tabindex=0><code>chronyc sources
+</code></pre></article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/9e7ee49fe80fbe3a55db599f552342f0272cd924 title="Last modified by flaviogheri | Aug 3, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/9df53e745bf6d2eb994815051e5973c45b48577d title="Last modified by Miquel Massot | Aug 4, 2022" target=_blank rel=noopener>
 <img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
-<span>Aug 3, 2022</span>
+<span>Aug 4, 2022</span>
 </a>
 </div>
 <div>
@@ -132,8 +155,8 @@ Server Configuration (Camera system Pi)
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#client-configuration-student-pi>Client Configuration (student Pi)</a></li>
 <li><a href=#server-configuration-camera-system-pi>Server Configuration (Camera system Pi)</a></li>
+<li><a href=#client-configuration-student-raspberry-pi>Client Configuration (student Raspberry Pi)</a></li>
 </ul>
 </nav>
 </div>
