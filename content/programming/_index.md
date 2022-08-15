@@ -1,9 +1,6 @@
 ---
 title: Programming
 weight: 7  # sets order
-cover: 
-    image: github_repository.png
-    alt: 'this is a post image'
 ---
 
 # Setting Up 
@@ -19,5 +16,5 @@ The installation will take you to a github repository. To install, click on the 
 
 ![github_repo](static/github_repo.png)
 
-
-
+Once installed, extract the folder and open mobile_robotics_python in vs code within mobile_robotics_python-main/mobile_robotics_python-main/src open the folder mobile_robotics_python. Once opened the folder should look something like this:
+![initial_folder](static/initial_folder.png)
