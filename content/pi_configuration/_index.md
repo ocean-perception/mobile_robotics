@@ -1,5 +1,5 @@
 ---
-title: configure_pi
+title: pi_configuration
 bookCollapseSection: true
 weight: 50 # sets order
 ---
