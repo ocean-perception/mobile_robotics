@@ -2,7 +2,7 @@
 title: Programming
 weight: 7  # sets order
 cover: 
-    image: images/github_repository.png
+    image: github_repository.png
     alt: 'this is a post image'
 ---
 
@@ -17,7 +17,7 @@ Both the Land Rover and the Robotic vessel will use the same code. Depending on 
 
 The installation will take you to a github repository. To install, click on the code button then install the code by clicking the 'download zip' in the dropdown menu 
 
-![github_repo](images/github_repo.png)
+![github_repo](static/github_repo.png)
 
 
 
