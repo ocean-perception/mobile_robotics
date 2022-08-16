@@ -61,4 +61,6 @@ The Thymio Rover uses a Rasberry Pi 3. It also uses a ROS as a midware in order 
 
 Once Everything is succesfully assembled, (follow the assembly page), you may start exploring the programming page. If the pi has not yet been pre-configured with the correct libraries, look at the 'configure pi' page and ask a professor for help.
 
-
+```
+while not self.mission_control.finished:
+```
