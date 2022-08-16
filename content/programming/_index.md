@@ -8,13 +8,11 @@ weight: 7  # sets order
 Now that you have tested that the robot functions correctly. We will begin to go through the main body of code that you will be using thoughout your project.
 It is highly suggested to install VS code, (a code editor like spyder and Jupyter Notebook), as it will show all the python files that you need to work with on the side.
 
-{{< button href="https://code.visualstudio.com/Download" >}}Install VSCode{{< /button >}}
-
 Both the Land Rover and the Robotic vessel will use the same code. Depending on your robot, you will need to configure it in the "configuration.yaml" file.
 
 The installation will take you to a github repository. To install, click on the code button then install the code by clicking the 'download zip' in the dropdown menu
 
-{{< button href="https://github.com/ocean-perception/mobile_robotics_python" >}}Main Code{{< /button >}}
+{{< button href="https://code.visualstudio.com/Download" >}}Install VSCode{{< /button >}}{{< button href="https://github.com/ocean-perception/mobile_robotics_python" >}}Main Code{{< /button >}}
 
 ![github_repo](static/github_repo.png)
 
@@ -86,8 +84,13 @@ Remember, if you want to follow the same structure, you will need to have a pred
 ### Editing configuration.yaml
 
 Change the driver of localization within the configuration.yaml file, (found in the configuration folder). All files refer to this yaml in order to understand which file is to implemented. In future you may want to change some of the offsets within the file as its likely that there is an offset between your sensors, motors and the centre of the robot. 
-You will also be able to change the configuration of your robot, putting the correct encoder drivers and compas/magnetometer depending if you are using the robotic vessel or pitop.
-
+{{< hint info >}}
+You will also be able to change the configuration of your robot. Aka changing your configuration to the correct encoder drivers and compas/magnetometer depending if you are using the robotic vessel or pitop.
+{{< /hint >}}
 ![location within yaml](static/location_within_yaml.png)
 
 
+{{< hint warning>}}
+
+Now that you have learned a little more about the configuration yaml and the main robot function. Try creating a new waypoint mission yourself and chaning the configuration.yaml !
+{{< /hint>}}
