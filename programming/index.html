@@ -14,7 +14,7 @@ Install VSCode  Both the Land Rover and the Robotic vessel will use the same cod
 <link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
 <script defer src=/mobile_robotics/flexsearch.min.js></script>
-<script defer src=/mobile_robotics/en.search.min.086b09d6c2ad9735df777faf71145ce69cbc20285b67e4665db121d4b18c2ac6.js integrity="sha256-CGsJ1sKtlzXfd3+vcRRc5py8IChbZ+RmXbEh1LGMKsY=" crossorigin=anonymous></script>
+<script defer src=/mobile_robotics/en.search.min.b5c0ba8cda37d2a851bfb4218e892fe29398087a36f9c9bf4f4cb66916e6f13a.js integrity="sha256-tcC6jNo30qhRv7Qhjokv4pOYCHo2+cm/T0y2aRbm8To=" crossorigin=anonymous></script>
 <script defer src=/mobile_robotics/sw.min.9f9f0314a35cee6ec643afeaa4a88ac163499fab5bd5713684e8fe5d39c0d88c.js integrity="sha256-n58DFKNc7m7GQ6/qpKiKwWNJn6tb1XE2hOj+XTnA2Iw=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/programming/index.xml title="Mobile Robotics documentation">
 </head>
@@ -77,7 +77,11 @@ Install VSCode  Both the Land Rover and the Robotic vessel will use the same cod
 </label>
 </div>
 <aside class="hidden clearfix">
-<nav id=TableOfContents></nav>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#how-the-code-is-structured>How the code is structured</a></li>
+</ul>
+</nav>
 </aside>
 </header>
 <article class=markdown><h1 id=setting-up>
@@ -91,16 +95,65 @@ Install VSCode
 </a>
 <p>Both the Land Rover and the Robotic vessel will use the same code. Depending on your robot, you will need to configure it in the &ldquo;configuration.yaml&rdquo; file.</p>
 <p>The installation will take you to a github repository. To install, click on the code button then install the code by clicking the &lsquo;download zip&rsquo; in the dropdown menu</p>
+<a href=https://github.com/ocean-perception/mobile_robotics_python target=_blank rel=noopener class=book-btn>
+Main Code
+</a>
 <p>
 <img src=static/github_repo.png alt=github_repo></p>
 <p>Once installed, extract the folder and open mobile_robotics_python in vs code within mobile_robotics_python-main/mobile_robotics_python-main/src open the folder mobile_robotics_python. Once opened the folder should look something like this:
 <img src=static/initial_folder.png alt=initial_folder></p>
+<h1 id=folder-introduction>
+Folder Introduction
+<a class=anchor href=#folder-introduction>#</a>
+</h1>
+<p>This folder will be where you will write your code throughout the project. Although the code might look a little intimidating at first. Most of the files withing the folder will work in the background and therefore will not need to be tampered with.</p>
+<p>The objective of your course will be to create new localization_solutions and navigations_solutions so that the robot is able to navigate autonomously to its best ability.</p>
+<h2 id=how-the-code-is-structured>
+How the code is structured
+<a class=anchor href=#how-the-code-is-structured>#</a>
+</h2>
+<p>When the the code is run, it will got through the main loop within robot.py, the loop follows a sense, think, act structure.</p>
+<pre tabindex=0><code>while not self.mission_control.finished:
+            # Read sensors
+            measurements = []
+            if self.compass is not None:
+                msg = self.compass.read()
+                measurements.append(msg)
+            if self.encoder is not None:
+                self.encoder.yaw_rad = self.compass.yaw_rad
+                msg = self.encoder.read()
+                measurements.append(msg)
+            if self.external_positioning is not None:
+                msg = self.external_positioning.read()
+                print(msg)
+                #measurements.append(msg)
+            if self.lidar is not None:
+                msg = self.lidar.read()
+</code></pre><hr>
+<h1 id=diagram>
+diagram
+<a class=anchor href=#diagram>#</a>
+</h1>
+<p>plantuml
+@startuml
+class Example {
+- String name
+- int number</p>
+<pre><code>+void getName()
++void getNumber()
++String toString()
+</code></pre>
+<p>}
+@enduml</p>
+<hr>
+<p>Next slide</p>
+<hr>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/eee9be51ec470208457986a30293a23f4e7e7c61 title="Last modified by flaviogheri | Aug 15, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/6097713402ff1775b0790d2d5b46886dbb02a379 title="Last modified by flaviogheri | Aug 16, 2022" target=_blank rel=noopener>
 <img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
-<span>Aug 15, 2022</span>
+<span>Aug 16, 2022</span>
 </a>
 </div>
 <div>
@@ -118,7 +171,11 @@ Install VSCode
 </div>
 <aside class=book-toc>
 <div class=book-toc-content>
-<nav id=TableOfContents></nav>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#how-the-code-is-structured>How the code is structured</a></li>
+</ul>
+</nav>
 </div>
 </aside>
 </main>
