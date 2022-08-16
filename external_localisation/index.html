@@ -2,7 +2,9 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="External localisation #  Placeholder">
+<meta name=description content="External localisation #  ArUco setup Checklist #  Before Turning on the Pi #  Ensure Camera is in centre of tank and is facing the tank, (and is connected to the pi)
+Ensure No ArUco Markers Are visible in the Camera frame (flip them upside down to ensure they can’t be seen)
+Ensure that the Router is turned on and that it’s Wifi led is on, (doesn’t need to be connected to the internet)">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="External localisation">
 <meta property="og:description" content>
@@ -13,7 +15,7 @@
 <link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
 <script defer src=/mobile_robotics/flexsearch.min.js></script>
-<script defer src=/mobile_robotics/en.search.min.f3e74b3d92d01dac810ac71798cdf7589ef3b7d55f0e8b883778aecfc05bde46.js integrity="sha256-8+dLPZLQHayBCscXmM33WJ7zt9VfDouIN3iuz8Bb3kY=" crossorigin=anonymous></script>
+<script defer src=/mobile_robotics/en.search.min.2e5227db4bc2eddfa424da647a10aa24cd178a19310009ccc8acb444aa72af42.js integrity="sha256-LlIn20vC7d+kJNpkehCqJM0XihkxAAnMyKy0RKpyr0I=" crossorigin=anonymous></script>
 <script defer src=/mobile_robotics/sw.min.9f9f0314a35cee6ec643afeaa4a88ac163499fab5bd5713684e8fe5d39c0d88c.js integrity="sha256-n58DFKNc7m7GQ6/qpKiKwWNJn6tb1XE2hOj+XTnA2Iw=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/external_localisation/index.xml title="Mobile Robotics documentation">
 </head>
@@ -76,20 +78,94 @@
 </label>
 </div>
 <aside class="hidden clearfix">
-<nav id=TableOfContents></nav>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#aruco-setup-checklist>ArUco setup Checklist</a>
+<ul>
+<li><a href=#before-turning-on-the-pi>Before Turning on the Pi</a></li>
+<li><a href=#when-pi-is-turned-on>When Pi is turned on</a></li>
+</ul>
+</li>
+<li><a href=#broadcast-frequency>Broadcast Frequency,</a></li>
+<li><a href=#setting-up-the-client-pis-robots>Setting up the Client Pi’s, (Robots)</a></li>
+<li><a href=#debugging>Debugging</a></li>
+</ul>
+</nav>
 </aside>
 </header>
 <article class=markdown><h1 id=external-localisation>
 External localisation
 <a class=anchor href=#external-localisation>#</a>
 </h1>
-<p>Placeholder</p>
+<h2 id=aruco-setup-checklist>
+ArUco setup Checklist
+<a class=anchor href=#aruco-setup-checklist>#</a>
+</h2>
+<h3 id=before-turning-on-the-pi>
+Before Turning on the Pi
+<a class=anchor href=#before-turning-on-the-pi>#</a>
+</h3>
+<p>Ensure Camera is in centre of tank and is facing the tank, (and is connected to the pi)</p>
+<p>Ensure No ArUco Markers Are visible in the Camera frame (flip them upside down to ensure they can’t be seen)</p>
+<p>Ensure that the Router is turned on and that it’s Wifi led is on, (doesn’t need to be connected to the internet)</p>
+<p>Turn On the Rasberry pi, (may take a while, if no monitor attached wait 1 minute to ensure everything has booted up before configuring)</p>
+<p>When booting the Pi, the ArUco code should start automatically, therefore it is not necessary to connect a keyboard or mouse to the Pi. If desired, a monitor may be connected to transmit all the Pi’s Information, (recommended).</p>
+<h3 id=when-pi-is-turned-on>
+When Pi is turned on
+<a class=anchor href=#when-pi-is-turned-on>#</a>
+</h3>
+<p>To newly calibrate the origin location, place the Calibration tag (#0) where desired, (ensure it is flat and not moving), the origin will be located in the centre of this marker. Then Show the ‘OK’ (#49) tag in frame. Only when the 2 tags are recognised in frame will the code save the position.</p>
+<p>If you want to use the old Calibrated Origin, then the previous step can be skipped by only showing the ‘OK’ (#49) in frame.</p>
+<p>If the step was done incorrectly, proceed to show the Shut-down tag (#40) together with the ‘OK’ (#49) tag in frame. WAIT 1 minute (to ensure that pi properly switches off), then proceed to turn the pi’s power off then on. (This should reboot the program)</p>
+<p>***The Setup-phase is now completed ***</p>
+<h2 id=broadcast-frequency>
+Broadcast Frequency,
+<a class=anchor href=#broadcast-frequency>#</a>
+</h2>
+<p>(frequency at which the Server Pi will send the coordinates to the Client Pi’s) has a possible configuration of ‘logging speed’ (~10th of a second), 1s, 2s, 5s, 10s and never. On boot the pi will be initially setup to send the information every 1s.</p>
+<p>To change the show the desired Broadcast Frequency tag (shown in table below) in frame, with the ‘OK’ tag (#49).</p>
+<p>At logging speed</p>
+<p>1s</p>
+<p>2s</p>
+<p>5s</p>
+<p>10s</p>
+<p>Never</p>
+<p>#30</p>
+<p>#31</p>
+<p>#32</p>
+<p>#33</p>
+<p>#34</p>
+<p>#35</p>
+<p>If a Display is connected to the Pi, the broadcast frequency will be visible as a frame will blink around the screen at every broadcasted interval, (when an ArUco marker is being shown).</p>
+<p>The Server Pi should Now be all set!</p>
+<p>To Turn Off the Pi show the Shut-down tag (#40) together with the ‘OK’ (#49) tag in frame. WAIT 1 minute (to ensure that pi properly switches off).</p>
+<p>The Pi will Log all the ArUco tag information in a csv file of which’ name will be ‘#.csv’ where # is the ArUco Tag’s ID. All these files will be stored in a folder named after the exact time the Pi was booted up, example: ‘2022_07_25_12_34_18’, where is in this order: (‘Year_Month_Day_Hour_Minute_Second’).</p>
+<p>All information will be saved on the ssd card connected separately. This can be disconnected when the Pi is of to read the information from another computer. (there will be a long usb extension so that it is easily accessible).</p>
+<h2 id=setting-up-the-client-pis-robots>
+Setting up the Client Pi’s, (Robots)
+<a class=anchor href=#setting-up-the-client-pis-robots>#</a>
+</h2>
+<p>Make sure all packages have been installed and the Chrony configuration have been made.</p>
+<p>Open the Python file</p>
+<p>Run the file</p>
+<h2 id=debugging>
+Debugging
+<a class=anchor href=#debugging>#</a>
+</h2>
+<p>If robot is not receiving information</p>
+<p>Uncomment the ‘print(broadcast_data) line’:</p>
+<p>If nothing the Robot is still not reading anything when any ArUco tag is shown in the camera frame then, (recognised when frame frown around Tag):</p>
+<p>Remember position data will only be broadcasted from the Server Robot once the setup phase is complete)</p>
+<p>Ensure The Client (Robot) Pi is connected to local Router, (called: ArUco)</p>
+<p>Ensure the Port to the one shown on screen from the Rasberry pi, (if so change variable called port to one shown on Server Pi display)</p>
+<p>Ensure no Other code has been altered other than what has been instructed.</p>
+<p>If nothing is still being received please change rasberry pi.</p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/f541b8be138d818028b6476cecc374508cd54df8 title="Last modified by Miquel Massot | Aug 3, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/28748ea95e3b27a2b787c8d689831081929a48e4 title="Last modified by flaviogheri | Aug 16, 2022" target=_blank rel=noopener>
 <img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
-<span>Aug 3, 2022</span>
+<span>Aug 16, 2022</span>
 </a>
 </div>
 <div>
@@ -107,7 +183,19 @@ External localisation
 </div>
 <aside class=book-toc>
 <div class=book-toc-content>
-<nav id=TableOfContents></nav>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#aruco-setup-checklist>ArUco setup Checklist</a>
+<ul>
+<li><a href=#before-turning-on-the-pi>Before Turning on the Pi</a></li>
+<li><a href=#when-pi-is-turned-on>When Pi is turned on</a></li>
+</ul>
+</li>
+<li><a href=#broadcast-frequency>Broadcast Frequency,</a></li>
+<li><a href=#setting-up-the-client-pis-robots>Setting up the Client Pi’s, (Robots)</a></li>
+<li><a href=#debugging>Debugging</a></li>
+</ul>
+</nav>
 </div>
 </aside>
 </main>
