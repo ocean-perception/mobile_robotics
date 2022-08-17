@@ -25,7 +25,9 @@ Once installed, extract the folder and open mobile_robotics_python in vs code wi
 
 This folder will be where you will write your code throughout the project. Although the code might look a little intimidating at first. Most of the files withing the folder will work in the background and therefore will not need to be tampered with.
 
-The objective of your course will be to create new localization_solutions and navigations_solutions so that the robot is able to navigate autonomously to its best ability.
+The objective of your course will be to create new localization_solutions and navigations_solutions so that the robot is able to navigate autonomously to its best ability. Here below you can see what the current code should do with basic localisation and navigation code.
+
+{{< vimeo 740325079 >}}
 
 ### Simplified model of structure
 
