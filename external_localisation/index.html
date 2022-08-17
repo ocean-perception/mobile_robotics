@@ -14,7 +14,7 @@
 <link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
 <script defer src=/mobile_robotics/flexsearch.min.js></script>
-<script defer src=/mobile_robotics/en.search.min.ef462d6e5a9063d86d9ac782b44e611666be6c44f3cbd2c23c8f1cc0a83df8aa.js integrity="sha256-70YtblqQY9htmseCtE5hFma+bETzy9LCPI8cwKg9+Ko=" crossorigin=anonymous></script>
+<script defer src=/mobile_robotics/en.search.min.9fc9a264ac15e3293e146d5f9cc7045c9d6323ccf11b0a0e2043f8ff57942698.js integrity="sha256-n8miZKwV4yk+FG1fnMcEXJ1jI8zxGwoOIEP4/1eUJpg=" crossorigin=anonymous></script>
 <script defer src=/mobile_robotics/sw.min.9f9f0314a35cee6ec643afeaa4a88ac163499fab5bd5713684e8fe5d39c0d88c.js integrity="sha256-n58DFKNc7m7GQ6/qpKiKwWNJn6tb1XE2hOj+XTnA2Iw=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/external_localisation/index.xml title="Mobile Robotics documentation">
 </head>
@@ -284,18 +284,28 @@ Setting up the Client Pi’s, (Robots)
 Debugging
 <a class=anchor href=#debugging>#</a>
 </h2>
+<div class=book-expand>
+<label>
+<div class="book-expand-head flex justify-between">
+<span>Expand</span>
+<span>↕</span>
+</div>
+<input type=checkbox class=hidden>
+<div class="book-expand-content markdown-inner">
 <p>If robot is not receiving information</p>
-<p>Uncomment the ‘print(broadcast_data) line’:</p>
-<p>If nothing the Robot is still not reading anything when any ArUco tag is shown in the camera frame then, (recognised when frame frown around Tag):</p>
-<p>Remember position data will only be broadcasted from the Server Robot once the setup phase is complete)</p>
-<p>Ensure The Client (Robot) Pi is connected to local Router, (called: ArUco)</p>
-<p>Ensure the Port to the one shown on screen from the Rasberry pi, (if so change variable called port to one shown on Server Pi display)</p>
+<p>Uncomment the <code>print(broadcast_data)</code> line</p>
+<p>Place an Aruco Tag infront of the camera, if something is being printed in the console, this means that the aruco tags are being recognised. Therefore you can proceed to the next step (Remember position data will only be broadcasted from the Server Robot once the setup phase is complete) :</p>
+<p>Ensure The Client (Robot) Pi is connected to <strong>local Router</strong>, as this is the network on which the pi will broadcast the data, if your trying this at home, make sure that the both the host and your pi are connected to the same local network, (it will not work through public wifi&rsquo;s such as the Universities Eduroam)</p>
+<p>Ensure the Port to the one shown on screen from the Rasberry pi, (if so change variable called port to one shown on Server Pi )</p>
 <p>Ensure no Other code has been altered other than what has been instructed.</p>
-<p>If nothing is still being received please change rasberry pi.</p>
+<p>If nothing is still being received please ask help from a member of staff.</p>
+</div>
+</label>
+</div>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/3b169608201ffa9198832496e806086a3d2edc1c title="Last modified by flaviogheri | Aug 17, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/d4864a7fc39acdcc07213d95d0af23d83da9d1f8 title="Last modified by flaviogheri | Aug 17, 2022" target=_blank rel=noopener>
 <img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
 <span>Aug 17, 2022</span>
 </a>

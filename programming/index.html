@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Setting Up #  Now that you have tested that the robot functions correctly. We will begin to go through the main body of code that you will be using thoughout your project. It is highly suggested to install VS code, (a code editor like spyder and Jupyter Notebook), as it will show all the python files that you need to work with on the side.
+<meta name=description content="Programming #  Setting Up #  Now that you have tested that the robot functions correctly. We will begin to go through the main body of code that you will be using thoughout your project. It is highly suggested to install VS code, (a code editor like spyder and Jupyter Notebook), as it will show all the python files that you need to work with on the side.
 Both the Land Rover and the Robotic vessel will use the same code.">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="Programming">
@@ -14,7 +14,7 @@ Both the Land Rover and the Robotic vessel will use the same code.">
 <link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
 <script defer src=/mobile_robotics/flexsearch.min.js></script>
-<script defer src=/mobile_robotics/en.search.min.ef462d6e5a9063d86d9ac782b44e611666be6c44f3cbd2c23c8f1cc0a83df8aa.js integrity="sha256-70YtblqQY9htmseCtE5hFma+bETzy9LCPI8cwKg9+Ko=" crossorigin=anonymous></script>
+<script defer src=/mobile_robotics/en.search.min.9fc9a264ac15e3293e146d5f9cc7045c9d6323ccf11b0a0e2043f8ff57942698.js integrity="sha256-n8miZKwV4yk+FG1fnMcEXJ1jI8zxGwoOIEP4/1eUJpg=" crossorigin=anonymous></script>
 <script defer src=/mobile_robotics/sw.min.9f9f0314a35cee6ec643afeaa4a88ac163499fab5bd5713684e8fe5d39c0d88c.js integrity="sha256-n58DFKNc7m7GQ6/qpKiKwWNJn6tb1XE2hOj+XTnA2Iw=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/programming/index.xml title="Mobile Robotics documentation">
 </head>
@@ -79,9 +79,12 @@ Both the Land Rover and the Robotic vessel will use the same code.">
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#how-the-code-is-structured>How the code is structured</a></li>
-</ul>
+<li><a href=#setting-up>Setting Up</a></li>
+<li><a href=#folder-introduction>Folder Introduction</a>
 <ul>
+<li><a href=#simplified-model-of-structure>Simplified model of structure</a></li>
+</ul>
+</li>
 <li><a href=#sensing>Sensing</a></li>
 <li><a href=#thinking>Thinking</a>
 <ul>
@@ -89,14 +92,19 @@ Both the Land Rover and the Robotic vessel will use the same code.">
 <li><a href=#editing-configurationyaml>Editing configuration.yaml</a></li>
 </ul>
 </li>
+<li><a href=#acting>Acting</a></li>
 </ul>
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=setting-up>
+<article class=markdown><h1 id=programming>
+Programming
+<a class=anchor href=#programming>#</a>
+</h1>
+<h2 id=setting-up>
 Setting Up
 <a class=anchor href=#setting-up>#</a>
-</h1>
+</h2>
 <p>Now that you have tested that the robot functions correctly. We will begin to go through the main body of code that you will be using thoughout your project.
 It is highly suggested to install VS code, (a code editor like spyder and Jupyter Notebook), as it will show all the python files that you need to work with on the side.</p>
 <p>Both the Land Rover and the Robotic vessel will use the same code. Depending on your robot, you will need to configure it in the &ldquo;configuration.yaml&rdquo; file.</p>
@@ -113,21 +121,17 @@ Main Code
 <img src=static/github_repo.png alt=github_repo></p>
 <p>Once installed, extract the folder and open mobile_robotics_python in vs code within mobile_robotics_python-main/mobile_robotics_python-main/src open the folder mobile_robotics_python. Once opened the folder should look something like this:
 <img src=static/initial_folder.png alt=initial_folder></p>
-<h1 id=folder-introduction>
+<h2 id=folder-introduction>
 Folder Introduction
 <a class=anchor href=#folder-introduction>#</a>
-</h1>
+</h2>
 <p>This folder will be where you will write your code throughout the project. Although the code might look a little intimidating at first. Most of the files withing the folder will work in the background and therefore will not need to be tampered with.</p>
 <p>The objective of your course will be to create new localization_solutions and navigations_solutions so that the robot is able to navigate autonomously to its best ability.</p>
-<h2 id=how-the-code-is-structured>
-How the code is structured
-<a class=anchor href=#how-the-code-is-structured>#</a>
-</h2>
-<p>When the the code is run, it will got through the main loop within robot.py. In simple words it goes in a &lsquo;sense, think, act&rsquo; loop.</p>
-<h1 id=simplified-model-of-structure>
+<h3 id=simplified-model-of-structure>
 Simplified model of structure
 <a class=anchor href=#simplified-model-of-structure>#</a>
-</h1>
+</h3>
+<p>When the the code is run, it will got through the main loop within robot.py. In simple words it goes in a &lsquo;sense, think, act&rsquo; loop.</p>
 <p>
 <img src=static/sensethinkact.png alt="simplified model"></p>
 <p>as you can see in the python page, within the loop:</p>
@@ -182,12 +186,19 @@ You will also be able to change the configuration of your robot. Aka changing yo
 <blockquote class="book-hint warning">
 Now that you have learned a little more about the configuration yaml and the main robot function. Try creating a new waypoint mission yourself and chaning the configuration.yaml !
 </blockquote>
+<h2 id=acting>
+Acting
+<a class=anchor href=#acting>#</a>
+</h2>
+<p>The current navigation solution, <code>naive_robot_move.py</code> has a very basic and naive navigation algorithm. You will have to develop your own which is a little smarter, in which it can react upon its current situation, (both long and short term). An example of this, is if there is an obstacle between the robot and it&rsquo;s current waypoint.</p>
+<p>The current solution simply computes the difference between its current position and the waypoint and will move the motors accordingly. As you may observe in this video, if the robot acidentally misses it&rsquo;s waypoint threshold, it will simply carry on.</p>
+<p>Similarly to what you did for the thinking section, you will need to create a new python file inside the folder called navigations_solutions. You will then need to edit both your configuration.yaml file and within <code>navigation.py</code> in order to follow your new navigation solution &ldquo;***.py&rdquo;, istead of the naive_robot_move.py</p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/5c5598e0360775c9691ef8b51e848fa3bf5c7ba3 title="Last modified by flaviogheri | Aug 16, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/1dcf464a22e69feaba5502b34b8223776ee5a3f5 title="Last modified by flaviogheri | Aug 17, 2022" target=_blank rel=noopener>
 <img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
-<span>Aug 16, 2022</span>
+<span>Aug 17, 2022</span>
 </a>
 </div>
 <div>
@@ -207,9 +218,12 @@ Now that you have learned a little more about the configuration yaml and the mai
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#how-the-code-is-structured>How the code is structured</a></li>
-</ul>
+<li><a href=#setting-up>Setting Up</a></li>
+<li><a href=#folder-introduction>Folder Introduction</a>
 <ul>
+<li><a href=#simplified-model-of-structure>Simplified model of structure</a></li>
+</ul>
+</li>
 <li><a href=#sensing>Sensing</a></li>
 <li><a href=#thinking>Thinking</a>
 <ul>
@@ -217,6 +231,7 @@ Now that you have learned a little more about the configuration yaml and the mai
 <li><a href=#editing-configurationyaml>Editing configuration.yaml</a></li>
 </ul>
 </li>
+<li><a href=#acting>Acting</a></li>
 </ul>
 </nav>
 </div>
