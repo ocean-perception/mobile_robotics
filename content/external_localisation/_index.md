@@ -96,23 +96,18 @@ Run the file
  
 
 ## Debugging 
-
+{{< expand  >}}
 If robot is not receiving information 
 
-Uncomment the ‘print(broadcast_data) line’: 
+Uncomment the `print(broadcast_data)` line
 
-If nothing the Robot is still not reading anything when any ArUco tag is shown in the camera frame then, (recognised when frame frown around Tag):  
+Place an Aruco Tag infront of the camera, if something is being printed in the console, this means that the aruco tags are being recognised. Therefore you can proceed to the next step (Remember position data will only be broadcasted from the Server Robot once the setup phase is complete) :
 
-Remember position data will only be broadcasted from the Server Robot once the setup phase is complete) 
+Ensure The Client (Robot) Pi is connected to **local Router**, as this is the network on which the pi will broadcast the data, if your trying this at home, make sure that the both the host and your pi are connected to the same local network, (it will not work through public wifi's such as the Universities Eduroam)
 
-Ensure The Client (Robot) Pi is connected to local Router, (called: ArUco) 
-
-Ensure the Port to the one shown on screen from the Rasberry pi, (if so change variable called port to one shown on Server Pi display) 
+Ensure the Port to the one shown on screen from the Rasberry pi, (if so change variable called port to one shown on Server Pi )
 
 Ensure no Other code has been altered other than what has been instructed.  
 
-If nothing is still being received please change rasberry pi. 
-
- 
-
- 
+If nothing is still being received please ask help from a member of staff.
+{{< /expand >}}
