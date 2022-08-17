@@ -4,6 +4,26 @@ bookCollapseSection: true
 weight: 50 # sets order
 ---
 
+# Rasberry Pi Configuration
+
+In theory ***your raspberry pi's should be already configured***, if so please do not go through this page.
+If your pi unfortunately got it's memory erased, or you were handed one with nothing on it, then read ahead.
+
+# Installing the Main Code
+
+You can install the main code by writing:
+
+To install your main code you will first need to install the git installer, to do this write the following in your pi's terminal, (following code is for linux):
+
+```sudo apt-get install git```
+
+once it has finished install, type the following command in the terminal, this will install the repository to your pi: 
+
+```git clone https://github.com/ocean-perception/mobile_robotics_python```
+
+if this does not work, please ask for a member of staff for help.
+
+
 # Chrony Configuration
 Chrony is an implementation of NTP, it allows for the pi's to synchronize their time even if internet is not connected to one of them. It acts as a daemon in the background. So when setup it should never need to be reconfigured or edited with afterwards.
 
