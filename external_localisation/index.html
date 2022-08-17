@@ -2,9 +2,8 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="External localisation #  ArUco setup Checklist #  Before Turning on the Pi #  Ensure Camera is in centre of tank and is facing the tank, (and is connected to the pi)
-Ensure No ArUco Markers Are visible in the Camera frame (flip them upside down to ensure they can’t be seen)
-Ensure that the Router is turned on and that it’s Wifi led is on, (doesn’t need to be connected to the internet)">
+<meta name=description content="External localisation #  Expand this text or click the yaml file to find all the assigned aruco tags   Aruco marker setup ↕  For an updated version of what each marker does please check the following yaml file, (as it is the one the pi will read), (website might be out of date).
+   Aruco Tag fucntionality Aruco Tag functionality Aruco Tag functionality     #0 robot 0 #10 None #20 5s Broadcast   #1 robot 1 #11 None #21 10s Broadcast   #2 robot 2 #12 OK #22 no Broadcast   #3 robot 3 #13 Shutdown #23 None   #4 robot 4 #14 Frame ENU #24 None   #5 robot 5 #15 Frame NED #25 None   #6 robot 6 #16 Broadcast at logging speed #26 None   #7 robot 7 #17 Calibration #27 None   #8 robot 8 #18 1s Broadcast #28 None   #9 robot 9 #19 2s Broadcast #29 None       yaml file  ArUco setup Checklist #  Before Turning on the Pi #  Ensure Camera is in centre of tank and is facing the tank, (and is connected to the pi)">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="External localisation">
 <meta property="og:description" content>
@@ -15,7 +14,7 @@ Ensure that the Router is turned on and that it’s Wifi led is on, (doesn’t n
 <link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
 <script defer src=/mobile_robotics/flexsearch.min.js></script>
-<script defer src=/mobile_robotics/en.search.min.9814732f08ee8b340c8f913acf1964724a528c35fae9b8922717d9fdeb88062b.js integrity="sha256-mBRzLwjuizQMj5E6zxlkckpSjDX66biSJxfZ/euIBis=" crossorigin=anonymous></script>
+<script defer src=/mobile_robotics/en.search.min.ef462d6e5a9063d86d9ac782b44e611666be6c44f3cbd2c23c8f1cc0a83df8aa.js integrity="sha256-70YtblqQY9htmseCtE5hFma+bETzy9LCPI8cwKg9+Ko=" crossorigin=anonymous></script>
 <script defer src=/mobile_robotics/sw.min.9f9f0314a35cee6ec643afeaa4a88ac163499fab5bd5713684e8fe5d39c0d88c.js integrity="sha256-n58DFKNc7m7GQ6/qpKiKwWNJn6tb1XE2hOj+XTnA2Iw=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/external_localisation/index.xml title="Mobile Robotics documentation">
 </head>
@@ -97,6 +96,117 @@ Ensure that the Router is turned on and that it’s Wifi led is on, (doesn’t n
 External localisation
 <a class=anchor href=#external-localisation>#</a>
 </h1>
+<p>Expand this text or click the yaml file to find all the assigned aruco tags
+<div class=book-expand>
+<label>
+<div class="book-expand-head flex justify-between">
+<span> Aruco marker setup</span>
+<span>↕</span>
+</div>
+<input type=checkbox class=hidden>
+<div class="book-expand-content markdown-inner">
+<p>For an updated version of what each marker does please check the following yaml file, (as it is the one the pi will read), (website might be out of date).</p>
+<table>
+<thead>
+<tr>
+<th>Aruco Tag</th>
+<th>fucntionality</th>
+<th>Aruco Tag</th>
+<th>functionality</th>
+<th>Aruco Tag</th>
+<th>functionality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#0</td>
+<td>robot 0</td>
+<td>#10</td>
+<td>None</td>
+<td>#20</td>
+<td>5s Broadcast</td>
+</tr>
+<tr>
+<td>#1</td>
+<td>robot 1</td>
+<td>#11</td>
+<td>None</td>
+<td>#21</td>
+<td>10s Broadcast</td>
+</tr>
+<tr>
+<td>#2</td>
+<td>robot 2</td>
+<td>#12</td>
+<td>OK</td>
+<td>#22</td>
+<td>no Broadcast</td>
+</tr>
+<tr>
+<td>#3</td>
+<td>robot 3</td>
+<td>#13</td>
+<td>Shutdown</td>
+<td>#23</td>
+<td>None</td>
+</tr>
+<tr>
+<td>#4</td>
+<td>robot 4</td>
+<td>#14</td>
+<td>Frame ENU</td>
+<td>#24</td>
+<td>None</td>
+</tr>
+<tr>
+<td>#5</td>
+<td>robot 5</td>
+<td>#15</td>
+<td>Frame NED</td>
+<td>#25</td>
+<td>None</td>
+</tr>
+<tr>
+<td>#6</td>
+<td>robot 6</td>
+<td>#16</td>
+<td>Broadcast at logging speed</td>
+<td>#26</td>
+<td>None</td>
+</tr>
+<tr>
+<td>#7</td>
+<td>robot 7</td>
+<td>#17</td>
+<td>Calibration</td>
+<td>#27</td>
+<td>None</td>
+</tr>
+<tr>
+<td>#8</td>
+<td>robot 8</td>
+<td>#18</td>
+<td>1s Broadcast</td>
+<td>#28</td>
+<td>None</td>
+</tr>
+<tr>
+<td>#9</td>
+<td>robot 9</td>
+<td>#19</td>
+<td>2s Broadcast</td>
+<td>#29</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+</div>
+</label>
+</div>
+<a href=https://github.com/miquelmassot/uos_aruco_detector/tree/main/src/uos_aruco_detector/configuration target=_blank rel=noopener class=book-btn>
+yaml file
+</a>
+</p>
 <h2 id=aruco-setup-checklist>
 ArUco setup Checklist
 <a class=anchor href=#aruco-setup-checklist>#</a>
@@ -114,32 +224,54 @@ Before Turning on the Pi
 When Pi is turned on
 <a class=anchor href=#when-pi-is-turned-on>#</a>
 </h3>
-<p>To newly calibrate the origin location, place the Calibration tag (#0) where desired, (ensure it is flat and not moving), the origin will be located in the centre of this marker. Then Show the ‘OK’ (#49) tag in frame. Only when the 2 tags are recognised in frame will the code save the position.</p>
-<p>If you want to use the old Calibrated Origin, then the previous step can be skipped by only showing the ‘OK’ (#49) in frame.</p>
-<p>If the step was done incorrectly, proceed to show the Shut-down tag (#40) together with the ‘OK’ (#49) tag in frame. WAIT 1 minute (to ensure that pi properly switches off), then proceed to turn the pi’s power off then on. (This should reboot the program)</p>
-<p>***The Setup-phase is now completed ***</p>
+<p>To newly calibrate the origin location, place the Calibration tag (<strong>#27</strong>) where desired, (ensure it is flat and not moving), the origin will be located in the centre of this marker. Then Show the ‘OK’ (<strong>#22</strong>) tag in frame. Only when the 2 tags are recognised in frame will the code save the position.</p>
+<p>If you want to use the old Calibrated Origin, then the previous step can be skipped by only showing the ‘OK’ (<strong>#22</strong>) in frame.</p>
+<p>If the step was done incorrectly, proceed to show the Shut-down tag (<strong>#13</strong>) together with the ‘OK’ (<strong>#22</strong>) tag in frame. WAIT 1 minute (to ensure that pi properly switches off), then proceed to turn the pi’s power off then on. (This should reboot the program)</p>
+<p><em><strong>The Setup-phase is now completed</strong></em></p>
 <h2 id=broadcast-frequency>
 Broadcast Frequency,
 <a class=anchor href=#broadcast-frequency>#</a>
 </h2>
 <p>(frequency at which the Server Pi will send the coordinates to the Client Pi’s) has a possible configuration of ‘logging speed’ (~10th of a second), 1s, 2s, 5s, 10s and never. On boot the pi will be initially setup to send the information every 1s.</p>
 <p>To change the show the desired Broadcast Frequency tag (shown in table below) in frame, with the ‘OK’ tag (#49).</p>
-<p>At logging speed</p>
-<p>1s</p>
-<p>2s</p>
-<p>5s</p>
-<p>10s</p>
-<p>Never</p>
-<p>#30</p>
-<p>#31</p>
-<p>#32</p>
-<p>#33</p>
-<p>#34</p>
-<p>#35</p>
+<table>
+<thead>
+<tr>
+<th>Aruco Tag</th>
+<th>Broadcast speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#16</td>
+<td>at logging speed</td>
+</tr>
+<tr>
+<td>#18</td>
+<td>every 1s</td>
+</tr>
+<tr>
+<td>#19</td>
+<td>every 2s</td>
+</tr>
+<tr>
+<td>#20</td>
+<td>every 5s</td>
+</tr>
+<tr>
+<td>#21</td>
+<td>every 10s</td>
+</tr>
+<tr>
+<td>#22</td>
+<td>no broadcast</td>
+</tr>
+</tbody>
+</table>
 <p>If a Display is connected to the Pi, the broadcast frequency will be visible as a frame will blink around the screen at every broadcasted interval, (when an ArUco marker is being shown).</p>
 <p>The Server Pi should Now be all set!</p>
-<p>To Turn Off the Pi show the Shut-down tag (#40) together with the ‘OK’ (#49) tag in frame. WAIT 1 minute (to ensure that pi properly switches off).</p>
-<p>The Pi will Log all the ArUco tag information in a csv file of which’ name will be ‘#.csv’ where # is the ArUco Tag’s ID. All these files will be stored in a folder named after the exact time the Pi was booted up, example: ‘2022_07_25_12_34_18’, where is in this order: (‘Year_Month_Day_Hour_Minute_Second’).</p>
+<p>To Turn Off the Pi show the Shut-down tag (<strong>#13</strong>) together with the ‘OK’ (<strong>#22</strong>) tag in frame. WAIT 1 minute (to ensure that pi properly switches off).</p>
+<p>The Pi will Log all the ArUco tag information in a csv file of which’ name will be ‘***.csv’ where # is the ArUco Tag’s ID. All these files will be stored in a folder named after the exact time the Pi was booted up, example: ‘2022_07_25_12_34_18’, where is in this order: (‘Year_Month_Day_Hour_Minute_Second’).</p>
 <p>All information will be saved on the ssd card connected separately. This can be disconnected when the Pi is of to read the information from another computer. (there will be a long usb extension so that it is easily accessible).</p>
 <h2 id=setting-up-the-client-pis-robots>
 Setting up the Client Pi’s, (Robots)
@@ -163,9 +295,9 @@ Debugging
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/28748ea95e3b27a2b787c8d689831081929a48e4 title="Last modified by flaviogheri | Aug 16, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/3b169608201ffa9198832496e806086a3d2edc1c title="Last modified by flaviogheri | Aug 17, 2022" target=_blank rel=noopener>
 <img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
-<span>Aug 16, 2022</span>
+<span>Aug 17, 2022</span>
 </a>
 </div>
 <div>
