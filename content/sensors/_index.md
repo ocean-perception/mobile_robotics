@@ -14,4 +14,4 @@ The encoders, even if the easiest to code, as there is a continuos feedback abou
 
 Here is an example of the robot moving in a square path based upon encoder readings and a basic navigation solution.
 
-{{<https://vimeo.com/740325079 >}}
+{{< vimeo 740325079 >}}
