@@ -1,0 +1,4 @@
+[codespell]
+skip = ./.git,./themes,./public
+count =
+quiet-level = 3

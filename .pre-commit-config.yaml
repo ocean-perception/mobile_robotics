@@ -1,0 +1,25 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: [ --fix=no ]
+      - id: pretty-format-json
+        args: [ --indent "   " ]
+      - id: trailing-whitespace
+        args: [ --markdown-linebreak-ext=md ]
+-   repo: https://github.com/codespell-project/codespell
+    rev: v2.2.0
+    hooks:
+    -   id: codespell
+        name: codespell
+        description: Checks for common misspellings in text files.
+        entry: codespell --ignore-words .codespell-ignore-words
+        language: python
+        types: [text]
