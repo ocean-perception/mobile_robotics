@@ -3,7 +3,7 @@
 
 # Fabrication
 
-Marine platforms are fabricated from common PVC tubing and fittings. Please note that “Push-Fit” and “Solvent Weld” types have different outer diameters and are not compatible. As these platforms are glued together, all components must be “Solvent Weld” compatible. 
+Marine platforms are fabricated from common PVC tubing and fittings. Please note that “Push-Fit” and “Solvent Weld” types have different outer diameters and are not compatible. As these platforms are glued together, all components must be “Solvent Weld” compatible.
 
 
 {{< expand " Materials Required" >}}
@@ -29,9 +29,9 @@ Marine platforms are fabricated from common PVC tubing and fittings. Please note
 ## Process
 
 It is recommended to go through the steps without gluing anything first to familiarise yourself).
-**To form one float**: 
+**To form one float**:
 ![picture1](static/Picture1.png)
- 
+
 1. Following the cement instructions, form two “C”s made up of two 90° bends and a 5.5cm tube each. The glue dries fairly quickly, make sure the bends are aligned using the fabrication lines on the plastic.
 2. Grab one of the “C”s and weld one 40cm tube. You should now have something that resembles an “L” shape.
 3. Connect the one 16.5cm tube and one 17.5cm tube to the equal tee according to the following diagram (pay attention to the curve in the Tee being closer to the longer piece of tubing).
@@ -40,7 +40,7 @@ It is recommended to go through the steps without gluing anything first to famil
 5. Using the second “C” from step above, close the assembly by gluing the 40cm tube and 16.5cm to the empty 90° bends.
 6. Leave to dry and repeat steps 1-5 to form the second float.
 
-### Centre Piece assembly 
+### Centre Piece assembly
 
 ![picture3](static/Picture3.png)
 1. Grab the 25cm tube and mark 5cm from one end.

@@ -4,7 +4,7 @@ bookCollapseSection: true
 weight: 50 # sets order
 ---
 
-# Rasberry Pi Configuration
+# Raspberry Pi Configuration
 
 In theory ***your raspberry pi's should be already configured***, if so please do not go through this page.
 If your pi unfortunately got it's memory erased, or you were handed one with nothing on it, then read ahead.
@@ -17,7 +17,7 @@ To install your main code you will first need to install the git installer, to d
 
 ```sudo apt-get install git```
 
-once it has finished install, type the following command in the terminal, this will install the repository to your pi: 
+once it has finished install, type the following command in the terminal, this will install the repository to your pi:
 
 ```git clone https://github.com/ocean-perception/mobile_robotics_python```
 
@@ -29,12 +29,12 @@ Chrony is an implementation of NTP, it allows for the pi's to synchronize their 
 
 
 ## Server Configuration (Camera system Pi)
-1. Install an editor of your choice (nano, vim, gedit), for example for `vim` you would write 
+1. Install an editor of your choice (nano, vim, gedit), for example for `vim` you would write
 
 ```
 sudo apt install vim
 ```
-    
+
 2. Install chrony with
 
 ```
@@ -45,24 +45,24 @@ sudo apt install chrony
 
 
 ## Client Configuration (student Raspberry Pi)
-1. Install an editor of your choice (nano, vim, gedit), for example for `vim` you would write 
+1. Install an editor of your choice (nano, vim, gedit), for example for `vim` you would write
 
 ```
 sudo apt install vim
 ```
-    
+
 2. Install chrony with
 
 ```
 sudo apt install chrony
 ```
-    
+
 4. Find or ask the IP address of the chrony server in the local network (the wifi router network). It should be something like `192.168.0.X`, where the last `X` will change for a number 0-254.
-5. Edit chrony configuration, and add the following line at the top of the file 
- 
+5. Edit chrony configuration, and add the following line at the top of the file
+
 ```
 server 192.168.0.X
-``` 
+```
 
 where `X` has to be changed for the correct IP. The file is located at `/etc/chrony/chrony.conf`. To edit it, you will need to use `sudo`, for example:
 ```
@@ -79,5 +79,3 @@ and now verify that chrony is using your IP by running the command
 ```
 chronyc sources
 ```
-
-

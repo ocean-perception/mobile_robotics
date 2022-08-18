@@ -5,11 +5,11 @@ weight: 30 # sets order
 ---
 # Maratime Robotics
 
-In your kit you will have a semi-constructed robotic-vessel that will look something like this: 
+In your kit you will have a semi-constructed robotic-vessel that will look something like this:
 
 
 
-Hopefully a pre-configured rasberry pi will be assigned to you. If not or if the memory got erased, please follow the steps in pi_configuration
+Hopefully a pre-configured raspberry pi will be assigned to you. If not or if the memory got erased, please follow the steps in pi_configuration
 
 If the pi **is** configured, and the robot is fully assembled, (check through platform assembly checklist). You can know check if the robot functions properly by using the simple remote controller code, which you can download here
 

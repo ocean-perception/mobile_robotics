@@ -3,11 +3,11 @@ title: Programming
 weight: 7  # sets order
 ---
 
-# Programming 
+# Programming
 
 ## Setting Up
 
-Now that you have tested that the robot functions correctly. We will begin to go through the main body of code that you will be using thoughout your project.
+Now that you have tested that the robot functions correctly. We will begin to go through the main body of code that you will be using throughout your project.
 It is highly suggested to install VS code, (a code editor like spyder and Jupyter Notebook), as it will show all the python files that you need to work with on the side.
 
 Both the Land Rover and the Robotic vessel will use the same code. Depending on your robot, you will need to configure it in the "configuration.yaml" file.
@@ -23,7 +23,7 @@ Once installed, extract the folder and open mobile_robotics_python in vs code wi
 
 ## Folder Introduction
 
-This folder will be where you will write your code throughout the project. Although the code might look a little intimidating at first. Most of the files withing the folder will work in the background and therefore will not need to be tampered with.
+This folder will be where you will write your code throughout the project. Although the code might look a little intimidating at first. Most of the files within the folder will work in the background and therefore will not need to be tampered with.
 
 The objective of your course will be to create new localization_solutions and navigations_solutions so that the robot is able to navigate autonomously to its best ability. Here below you can see what the current code should do with basic localisation and navigation code.
 
@@ -72,7 +72,7 @@ Once the robot has updated all the sensor data, it will use the information in o
 
 ```
 
-Create a new file in the same location_solution folder, name it (***.py), then once you have finished the code within, you will have to change configurations to use that file instead of dead reckoning as so: 
+Create a new file in the same location_solution folder, name it (***.py), then once you have finished the code within, you will have to change configurations to use that file instead of dead reckoning as so:
 
 ### Editing localisation.py
 
@@ -80,12 +80,12 @@ Add another if statement in the localisation.py file in the mobile_robotics, (ma
 
 ![location setup](static/localisation_setup.png)
 {{< hint info >}}
-Remember, if you want to follow the same structure, you will need to have a predict and update function withing your new localization solution. For example, you may choose to implement the location predictions withing the main robot loop, (as it isn't currently being utilized).
+Remember, if you want to follow the same structure, you will need to have a predict and update function within your new localization solution. For example, you may choose to implement the location predictions within the main robot loop, (as it isn't currently being utilized).
 {{< /hint >}}
 
 ### Editing configuration.yaml
 
-Change the driver of localization within the configuration.yaml file, (found in the configuration folder). All files refer to this yaml in order to understand which file is to implemented. In future you may want to change some of the offsets within the file as its likely that there is an offset between your sensors, motors and the centre of the robot. 
+Change the driver of localization within the configuration.yaml file, (found in the configuration folder). All files refer to this yaml in order to understand which file is to implemented. In future you may want to change some of the offsets within the file as its likely that there is an offset between your sensors, motors and the centre of the robot.
 {{< hint info >}}
 You will also be able to change the configuration of your robot. Aka changing your configuration to the correct encoder drivers and compas/magnetometer depending if you are using the robotic vessel or pitop.
 {{< /hint >}}
@@ -94,13 +94,13 @@ You will also be able to change the configuration of your robot. Aka changing yo
 
 {{< hint warning>}}
 
-Now that you have learned a little more about the configuration yaml and the main robot function. Try creating a new waypoint mission yourself and chaning the configuration.yaml !
+Now that you have learned a little more about the configuration yaml and the main robot function. Try creating a new waypoint mission yourself and changing the configuration.yaml !
 {{< /hint>}}
 
 ## Acting
 
 The current navigation solution, `naive_robot_move.py` has a very basic and naive navigation algorithm. You will have to develop your own which is a little smarter, in which it can react upon its current situation, (both long and short term). An example of this, is if there is an obstacle between the robot and it's current waypoint.
 
-The current solution simply computes the difference between its current position and the waypoint and will move the motors accordingly. As you may observe in this video, if the robot acidentally misses it's waypoint threshold, it will simply carry on.
+The current solution simply computes the difference between its current position and the waypoint and will move the motors accordingly. As you may observe in this video, if the robot accidentally misses it's waypoint threshold, it will simply carry on.
 
-Similarly to what you did for the thinking section, you will need to create a new python file inside the folder called navigations_solutions. You will then need to edit both your configuration.yaml file and within `navigation.py` in order to follow your new navigation solution "***.py", istead of the naive_robot_move.py
+Similarly to what you did for the thinking section, you will need to create a new python file inside the folder called navigations_solutions. You will then need to edit both your configuration.yaml file and within `navigation.py` in order to follow your new navigation solution "***.py", instead of the naive_robot_move.py
