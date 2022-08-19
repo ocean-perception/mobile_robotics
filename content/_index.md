@@ -34,7 +34,7 @@ The Robotic Vessel will consist of a kit with the vessel components, electronic 
 
 ### Pitop Rover
 
-The Pitop Rover consists of an assembly kit and a raspberry pi with Pitop's version of linux installed. The kit should be straight forward to assemble. Libraries for odometry and motor movement are pre-installed on the Pitops. [Assembly tutorial](https://www.pi-top.com/start/pi-top-4) will show you how to install the Pi inside the Pitop. Remember that the Pitop needs a minimum of 36 watts to be able to charge.
+The Pitop Rover consists of an rover kit with a raspberry pi with Pitop's version of linux installed. Libraries for odometry and motor movement are pre-installed on the Pitops. [Assembly tutorial](https://www.pi-top.com/start/pi-top-4) will show you how to install the Pi inside the Pitop. Remember that the Pitop needs a minimum of 36 watts to be able to charge.
 
 <--->
 
