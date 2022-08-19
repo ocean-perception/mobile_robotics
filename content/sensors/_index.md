@@ -6,7 +6,7 @@ weight: 1  # sets order
 # Sensors
 
 Depending on your robots, you should have a set of 3 or 4 different sensors contemporarily receiving data about your robots location and it's environment. The possible sensors you may have are: magnetometer, encoders, external positioning, lidar.
-There might be also an option to include an accelerometer in your code if you wish so.
+There might be also an option to include an accelerometer too.
 
 Some sensors will have a much higher reliability than others. For example, the external positioning is likely to be far more accurate than the encoders, as it is always observing the robot from a fixed, external reference frame.
 
@@ -28,7 +28,7 @@ To do this, a structure, seen below was created.
 
 The BaseLoggable class, creates seperate message format that both sensors and motors (actuators) will inherit, (and records everything that is sensed or occured). The sensors class will then configure the sensor by using the *YAML* file.
 
-Working through the tree, the BAseLogger class logs any data it recieves, and initially sets the message format for both the BaseSensor and Motors. The BaseSensor the configuration of the sensor, (given in the yaml file), and will configure the correct message type, driver etc.. to the current sensor being recorded. Finally the Sensor records the data, given the message structure and driver.
+Working through the tree, the BaseLogger class logs any data it recieves, and initially sets the message format for both the BaseSensor and Motors. The BaseSensor the configuration of the sensor, (given in the yaml file), and will configure the correct message type, driver etc.. to the current sensor being recorded. Finally the Sensor records the data, given the message structure and driver.
 
 
 # Sensors
@@ -63,3 +63,28 @@ Of course the information is still contains a fair amount of noise, as students,
 The external localisation is a way to simulate gps or other external positioning methods by using camera vision. The camera recognises the tags, and to due to the nature and distinctiveness of the tags, it is able to very effectively understand both the position and rotation of the tags.
 
 ![aruco_example](static/videos/aruco_example.gif)
+```
+def read(self) -> RobotStateMessage:
+        # TODO convert self.data to RobotStateMessage
+        msg = RobotStateMessage()
+        if self.data is None:
+            return msg
+        msg.stamp_s = self.data[0]
+        msg.x_m = self.data[2]
+        msg.y_m = self.data[3]
+        msg.z_m = self.data[4]
+        msg.roll_rad = self.data[5]
+        msg.pitch_rad = self.data[6]
+        msg.yaw_rad = self.data[7]
+        return msg
+```
+
+## Rotary Encoders
+
+The encoders are electromechanical devices that detects the angular position or motion of a shaft. The Pi-top was configured in such a way that the encoders return angle travelled. As a result the velocity calculated won't be as accurate as other sensors.
+
+
+
+## Compass/magnetometer
+
+The magnetometer is a device that measures magnetic field. This sensor will return the yaw of the vessel or vehicle.
