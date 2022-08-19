@@ -85,9 +85,9 @@ Remember, if you want to follow the same structure, you will need to have a pred
 
 ### Editing configuration.yaml
 
-Change the driver of localization within the configuration.yaml file, (found in the configuration folder). All files refer to this yaml in order to understand which file is to implemented. In future you may want to change some of the offsets within the file as its likely that there is an offset between your sensors, motors and the centre of the robot.
+Change the driver of localization within the configuration.yaml file, (found in the configuration folder). All files refer to this yaml in order to understand which file is to be implemented. In future you may want to change some of the offsets within the file as its likely that there is an offset between your sensors, motors and the centre of the robot.
 {{< hint info >}}
-You will also be able to change the configuration of your robot. Aka changing your configuration to the correct encoder drivers and compas/magnetometer depending if you are using the robotic vessel or pitop.
+You will also be able to change the configuration of your robot. Aka changing your configuration to the correct encoder drivers and compass/magnetometer depending on if you are using the robotic vessel or pitop.
 {{< /hint >}}
 ![location within yaml](static/location_within_yaml.png)
 
@@ -104,3 +104,4 @@ The current navigation solution, `naive_robot_move.py` has a very basic and naiv
 The current solution simply computes the difference between its current position and the waypoint and will move the motors accordingly. As you may observe in this video, if the robot accidentally misses it's waypoint threshold, it will simply carry on.
 
 Similarly to what you did for the thinking section, you will need to create a new python file inside the folder called navigations_solutions. You will then need to edit both your configuration.yaml file and within `navigation.py` in order to follow your new navigation solution "***.py", instead of the naive_robot_move.py
+
