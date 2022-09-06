@@ -1,6 +1,6 @@
 ---
 title: External localisation
-weight: 1  # sets order
+weight: 60  # sets order
 ---
 
 # External localisation
@@ -8,18 +8,18 @@ weight: 1  # sets order
 Expand this text or click the yaml file to find all the assigned aruco tags
 {{< expand " Aruco marker setup" >}}
 For an updated version of what each marker does please check the following yaml file, (as it is the one the pi will read), (website might be out of date).
-Aruco Tag        | functionality | Aruco Tag | functionality | Aruco Tag | functionality |
-----|---------| ---- | -------- | ---- | -------- |
-#0 | robot 0 | #10 | None | #20 | 5s Broadcast |
-#1 | robot 1 | #11 | None | #21 | 10s Broadcast |
-#2 | robot 2 | #12 | OK | #22 | no Broadcast |
-#3 | robot 3 | #13 | Shutdown | #23 | None|
-#4 | robot 4 | #14 | Frame ENU | #24 | None|
-#5 | robot 5 | #15 | Frame NED | #25 | None|
-#6 | robot 6 | #16 | Broadcast at logging speed | #26 | None |
-#7 | robot 7 | #17 | Calibration | #27 | None |
-#8 | robot 8 | #18 | 1s Broadcast | #28 | None |
-#9 | robot 9 | #19 | 2s Broadcast | #29 | None |
+| Aruco Tag | functionality | Aruco Tag | functionality              | Aruco Tag | functionality |
+| --------- | ------------- | --------- | -------------------------- | --------- | ------------- |
+| #0        | robot 0       | #10       | None                       | #20       | 5s Broadcast  |
+| #1        | robot 1       | #11       | None                       | #21       | 10s Broadcast |
+| #2        | robot 2       | #12       | OK                         | #22       | no Broadcast  |
+| #3        | robot 3       | #13       | Shutdown                   | #23       | None          |
+| #4        | robot 4       | #14       | Frame ENU                  | #24       | None          |
+| #5        | robot 5       | #15       | Frame NED                  | #25       | None          |
+| #6        | robot 6       | #16       | Broadcast at logging speed | #26       | None          |
+| #7        | robot 7       | #17       | Calibration                | #27       | None          |
+| #8        | robot 8       | #18       | 1s Broadcast               | #28       | None          |
+| #9        | robot 9       | #19       | 2s Broadcast               | #29       | None          |
 {{< /expand >}}
 {{< button href="https://github.com/miquelmassot/uos_aruco_detector/tree/main/src/uos_aruco_detector/configuration" >}}yaml file
 {{< /button >}}
@@ -58,14 +58,14 @@ If the step was done incorrectly, proceed to show the Shut-down tag (**#13**) to
 
 To change the show the desired Broadcast Frequency tag (shown in table below) in frame, with the ‘OK’ tag (#49).
 
-Aruco Tag        | Broadcast speed  |
---------------------|---------|
-#16 | at logging speed |
-#18 |     every 1s     |
-#19 |     every 2s     |
-#20 |     every 5s     |
-#21 |     every 10s    |
-#22 |   no broadcast   |
+| Aruco Tag | Broadcast speed  |
+| --------- | ---------------- |
+| #16       | at logging speed |
+| #18       | every 1s         |
+| #19       | every 2s         |
+| #20       | every 5s         |
+| #21       | every 10s        |
+| #22       | no broadcast     |
 
 If a Display is connected to the Pi, the broadcast frequency will be visible as a frame will blink around the screen at every broadcasted interval, (when an ArUco marker is being shown).
 

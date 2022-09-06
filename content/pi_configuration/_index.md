@@ -1,7 +1,7 @@
 ---
 title: pi_configuration
 bookCollapseSection: true
-weight: 50 # sets order
+weight: 70 # sets order
 ---
 
 # Raspberry Pi Configuration

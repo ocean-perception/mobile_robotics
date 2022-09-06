@@ -7,8 +7,6 @@ bookFlatSection: true
 
 # Welcome
 
-<!-- Find examples here https://hugo-book-demo.netlify.app/ -->
-{{< button href="https://hugo-book-demo.netlify.app/" >}}View demo book{{< /button >}}
 
 ## What is this module about?
 This module introduces the theoretical and practical design of maritime robotics systems such as autonomous underwater and surface vehicles (AUVs, ASVs).
@@ -48,4 +46,3 @@ The Thymio Rover uses a Raspberry Pi 3. It also uses a ROS as a midware in order
 ## Where to start?
 
 Once Everything is successfully assembled, (follow the assembly page), you may start exploring the **programming** page. If the pi has not yet been pre-configured with the correct libraries, look at the *'configure pi'* page and ask a professor for help.
-

@@ -1,9 +1,9 @@
 ---
 title: Maritime robotics
 bookCollapseSection: true
-weight: 30 # sets order
+weight: 50 # sets order
 ---
-# Maratime Robotics
+# Maritime Robotics
 
 In your kit you will have a semi-constructed robotic-vessel that will look something like this:
 

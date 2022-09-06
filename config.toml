@@ -21,6 +21,9 @@ enableGitInfo = true
 # You can remove related files with config below
 disableKinds = ['taxonomy', 'taxonomyTerm']
 
+# Set the hugo theme
+theme = "hugo-book"
+
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
@@ -38,7 +41,7 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
   # (Optional, default none) Set leaf bundle to render as side menu
   # When not specified file structure and weights will be used
   # Deprecated, to be removed in June 2022
-  BookMenuBundle = '/menu'
+  # BookMenuBundle = 'none'
 
   # (Optional, default docs) Specify section of content to render as menu
   # You can also set value to "*" to render all sections to menu
@@ -58,7 +61,7 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
   # Enable 'Edit this page' links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Path must point to the site directory.
-  BookEditPath = 'edit/main/exampleSite'
+  BookEditPath = 'edit/main'
 
   # (Optional, default January 2, 2006) Configure the date format used on the pages
   # - In git information

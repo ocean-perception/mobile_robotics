@@ -1,7 +1,7 @@
 ---
 title: Intelligent mobile robotics
 bookCollapseSection: true
-weight: 20 # sets order
+weight: 40 # sets order
 ---
 
 
@@ -28,4 +28,3 @@ If you need to place the Rasberry-pi inside your Pi-top, please follow this [Ass
 If your rasberry-pi hasn't been configured, please follow the Pi Configuration section. If it has progress to the programming section to learn more about the code you will work upon.
 
 You can then test your robot, to see if the motors respond, using the remote, or simply using the initial square movement code provided in the programming section,
-

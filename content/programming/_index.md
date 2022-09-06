@@ -1,6 +1,6 @@
 ---
 title: Programming
-weight: 7  # sets order
+weight: 30  # sets order
 ---
 
 # Programming
@@ -104,4 +104,3 @@ The current navigation solution, `naive_robot_move.py` has a very basic and naiv
 The current solution simply computes the difference between its current position and the waypoint and will move the motors accordingly. As you may observe in this video, if the robot accidentally misses it's waypoint threshold, it will simply carry on.
 
 Similarly to what you did for the thinking section, you will need to create a new python file inside the folder called navigations_solutions. You will then need to edit both your configuration.yaml file and within `navigation.py` in order to follow your new navigation solution "***.py", instead of the naive_robot_move.py
-

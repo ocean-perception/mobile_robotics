@@ -1,6 +1,6 @@
 ---
 title: Sensors
-weight: 1  # sets order
+weight: 20  # sets order
 ---
 
 # Sensors
@@ -22,17 +22,17 @@ To do this, a structure, seen below was created.
 
 ![instance](static/instance.png)
 
-The BaseLoggable class, creates seperate message format that both sensors and motors (actuators) will inherit, (and records everything that is sensed or occured). The sensors class will then configure the sensor by using the *YAML* file.
+The BaseLoggable class, creates separate message format that both sensors and motors (actuators) will inherit, (and records everything that is sensed or occurred). The sensors class will then configure the sensor by using the *YAML* file.
 
-Working through the tree, the BaseLogger class logs any data it recieves, and initially sets the message format for both the BaseSensor and Motors. The BaseSensor the configuration of the sensor, (given in the yaml file), and will configure the correct message type, driver etc.. to the current sensor being recorded. Finally the Sensor records the data, given the message structure and driver.
+Working through the tree, the BaseLogger class logs any data it receives, and initially sets the message format for both the BaseSensor and Motors. The BaseSensor the configuration of the sensor, (given in the yaml file), and will configure the correct message type, driver etc.. to the current sensor being recorded. Finally the Sensor records the data, given the message structure and driver.
 
 
 # Sensors
 
-## Lidar 
+## Lidar
 
 The lidar works by via laser triangulation. It releases very fast pulses of light toward a target and measures the amount of time it takes for the light to travel back.
-The message will be saved in the form of: 
+The message will be saved in the form of:
 ```
 def log_scan(self, msg: LaserScanMessage):
         """Log the sensor data to disk."""
