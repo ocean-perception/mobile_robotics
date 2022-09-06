@@ -1,96 +1,13 @@
-<!doctype html><html lang=en-uk dir=ltr>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Maritime Robotics #  In your kit you will have a semi-constructed robotic-vessel that will look something like this:
+<!doctype html><html lang=en-uk dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content=" Maritime Robotics # In your kit you will have a semi-constructed robotic-vessel that will look something like this:
 Hopefully a pre-configured raspberry pi will be assigned to you. If not or if the memory got erased, please follow the steps in pi_configuration
 If the pi is configured, and the robot is running the square code, (download the main code and running it).
-Programming page  ">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Maritime robotics">
-<meta property="og:description" content>
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://ocean-perception.github.io/mobile_robotics/maritime_robotics/">
-<title>Maritime robotics | Mobile Robotics documentation</title>
-<link rel=manifest href=/mobile_robotics/manifest.json>
-<link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
-<script defer src=/mobile_robotics/flexsearch.min.js></script>
-<script defer src=/mobile_robotics/en.search.min.b6059668ef2b350d9f36d1b315a376bc2e394d6797037de6a3ea0a2e9c463875.js integrity="sha256-tgWWaO8rNQ2fNtGzFaN2vC45TWeXA33mo+oKLpxGOHU=" crossorigin=anonymous></script>
-<script defer src=/mobile_robotics/sw.min.9f9f0314a35cee6ec643afeaa4a88ac163499fab5bd5713684e8fe5d39c0d88c.js integrity="sha256-n58DFKNc7m7GQ6/qpKiKwWNJn6tb1XE2hOj+XTnA2Iw=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/maritime_robotics/index.xml title="Mobile Robotics documentation">
-</head>
-<body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/mobile_robotics/><img src=/mobile_robotics/logo.png alt=Logo><span>Mobile Robotics documentation</span>
-</a>
-</h2>
-<div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
-</div>
-</nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div>
-</aside>
-<div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/mobile_robotics/svg/menu.svg class=book-icon alt=Menu>
-</label>
+Programming page "><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Maritime robotics"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="http://ocean-perception.github.io/mobile_robotics/maritime_robotics/"><title>Maritime robotics | Mobile Robotics documentation</title><link rel=manifest href=/mobile_robotics/manifest.json><link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon><link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous><script defer src=/mobile_robotics/flexsearch.min.js></script>
+<script defer src=/mobile_robotics/en.search.min.8acf1e284e402f98012387e117341d6ce89ff07526a8ed5d7dbda668fb9f861c.js integrity="sha256-is8eKE5AL5gBI4fhFzQdbOif8HUmqO1dfb2maPufhhw=" crossorigin=anonymous></script>
+<script defer src=/mobile_robotics/sw.min.6c62faa43e063351bb8db857ed6743bc77e390d2df184c1171b023c4fbfbe0c0.js integrity="sha256-bGL6pD4GM1G7jbhX7WdDvHfjkNLfGEwRcbAjxPv74MA=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/maritime_robotics/index.xml title="Mobile Robotics documentation"></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/mobile_robotics/><img src=/mobile_robotics/logo.png alt=Logo><span>Mobile Robotics documentation</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/mobile_robotics/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Maritime robotics</strong>
-<label for=toc-control>
-<img src=/mobile_robotics/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div>
-<aside class="hidden clearfix">
-<nav id=TableOfContents></nav>
-</aside>
-</header>
-<article class=markdown><h1 id=maritime-robotics>
-Maritime Robotics
-<a class=anchor href=#maritime-robotics>#</a>
-</h1>
-<p>In your kit you will have a semi-constructed robotic-vessel that will look something like this:</p>
-<p>Hopefully a pre-configured raspberry pi will be assigned to you. If not or if the memory got erased, please follow the steps in pi_configuration</p>
-<p>If the pi <strong>is</strong> configured, and the robot is running the square code, (download the main code and running it).</p>
-<a href=https://ocean-perception.github.io/mobile_robotics/programming/ target=_blank rel=noopener class=book-btn>
-Programming page
-</a>
-</article>
-<footer class=book-footer>
-<div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/8c6c56a9e1256325f62fafd341de315baacc9e8a title="Last modified by Miquel Massot | Sep 6, 2022" target=_blank rel=noopener>
-<img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
-<span>Sep 6, 2022</span>
-</a>
-</div>
-<div>
-<a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/edit/main/content/maritime_robotics/_index.md target=_blank rel=noopener>
-<img src=/mobile_robotics/svg/edit.svg class=book-icon alt=Edit>
-<span>Edit this page</span>
-</a>
-</div>
-</div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){if(window.getSelection().toString())return;a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
-</div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents></nav>
-</div>
-</aside>
-</main>
-</body>
-</html>
+<label for=toc-control><img src=/mobile_robotics/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents></nav></aside></header><article class=markdown><h1 id=maritime-robotics>Maritime Robotics
+<a class=anchor href=#maritime-robotics>#</a></h1><p>In your kit you will have a semi-constructed robotic-vessel that will look something like this:</p><p>Hopefully a pre-configured raspberry pi will be assigned to you. If not or if the memory got erased, please follow the steps in pi_configuration</p><p>If the pi <strong>is</strong> configured, and the robot is running the square code, (download the main code and running it).</p><a href=https://ocean-perception.github.io/mobile_robotics/programming/ target=_blank rel=noopener class=book-btn>Programming page</a></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/8c6c56a9e1256325f62fafd341de315baacc9e8a title='Last modified by Miquel Massot | Sep 6, 2022' target=_blank rel=noopener><img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
+<span>Sep 6, 2022</span></a></div><div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/edit/main/content/maritime_robotics/_index.md target=_blank rel=noopener><img src=/mobile_robotics/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents></nav></div></aside></main></body></html>

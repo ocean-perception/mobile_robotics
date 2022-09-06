@@ -1,156 +1,25 @@
-<!doctype html><html lang=en-uk dir=ltr>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Raspberry Pi Configuration #  In theory your raspberry pi&rsquo;s should be already configured, if so please do not go through this page. If your pi unfortunately got it&rsquo;s memory erased, or you were handed one with nothing on it, then read ahead.
-Installing the Main Code #  You can install the main code by writing:
-To install your main code you will first need to install the git installer, to do this write the following in your pi&rsquo;s terminal, (following code is for linux):">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="pi_configuration">
-<meta property="og:description" content>
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://ocean-perception.github.io/mobile_robotics/pi_configuration/">
-<title>pi_configuration | Mobile Robotics documentation</title>
-<link rel=manifest href=/mobile_robotics/manifest.json>
-<link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
-<script defer src=/mobile_robotics/flexsearch.min.js></script>
-<script defer src=/mobile_robotics/en.search.min.b6059668ef2b350d9f36d1b315a376bc2e394d6797037de6a3ea0a2e9c463875.js integrity="sha256-tgWWaO8rNQ2fNtGzFaN2vC45TWeXA33mo+oKLpxGOHU=" crossorigin=anonymous></script>
-<script defer src=/mobile_robotics/sw.min.9f9f0314a35cee6ec643afeaa4a88ac163499fab5bd5713684e8fe5d39c0d88c.js integrity="sha256-n58DFKNc7m7GQ6/qpKiKwWNJn6tb1XE2hOj+XTnA2Iw=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/pi_configuration/index.xml title="Mobile Robotics documentation">
-</head>
-<body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/mobile_robotics/><img src=/mobile_robotics/logo.png alt=Logo><span>Mobile Robotics documentation</span>
-</a>
-</h2>
-<div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
-</div>
-</nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div>
-</aside>
-<div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/mobile_robotics/svg/menu.svg class=book-icon alt=Menu>
-</label>
+<!doctype html><html lang=en-uk dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Raspberry Pi Configuration # In theory your raspberry pi&rsquo;s should be already configured, if so please do not go through this page. If your pi unfortunately got it&rsquo;s memory erased, or you were handed one with nothing on it, then read ahead.
+Installing the Main Code # You can install the main code by writing:
+To install your main code you will first need to install the git installer, to do this write the following in your pi&rsquo;s terminal, (following code is for linux):"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="pi_configuration"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="http://ocean-perception.github.io/mobile_robotics/pi_configuration/"><title>pi_configuration | Mobile Robotics documentation</title><link rel=manifest href=/mobile_robotics/manifest.json><link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon><link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous><script defer src=/mobile_robotics/flexsearch.min.js></script>
+<script defer src=/mobile_robotics/en.search.min.8acf1e284e402f98012387e117341d6ce89ff07526a8ed5d7dbda668fb9f861c.js integrity="sha256-is8eKE5AL5gBI4fhFzQdbOif8HUmqO1dfb2maPufhhw=" crossorigin=anonymous></script>
+<script defer src=/mobile_robotics/sw.min.6c62faa43e063351bb8db857ed6743bc77e390d2df184c1171b023c4fbfbe0c0.js integrity="sha256-bGL6pD4GM1G7jbhX7WdDvHfjkNLfGEwRcbAjxPv74MA=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/pi_configuration/index.xml title="Mobile Robotics documentation"></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/mobile_robotics/><img src=/mobile_robotics/logo.png alt=Logo><span>Mobile Robotics documentation</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/mobile_robotics/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>pi_configuration</strong>
-<label for=toc-control>
-<img src=/mobile_robotics/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div>
-<aside class="hidden clearfix">
-<nav id=TableOfContents>
-<ul>
-<li><a href=#server-configuration-camera-system-pi>Server Configuration (Camera system Pi)</a></li>
-<li><a href=#client-configuration-student-raspberry-pi>Client Configuration (student Raspberry Pi)</a></li>
-</ul>
-</nav>
-</aside>
-</header>
-<article class=markdown><h1 id=raspberry-pi-configuration>
-Raspberry Pi Configuration
-<a class=anchor href=#raspberry-pi-configuration>#</a>
-</h1>
-<p>In theory <em><strong>your raspberry pi&rsquo;s should be already configured</strong></em>, if so please do not go through this page.
-If your pi unfortunately got it&rsquo;s memory erased, or you were handed one with nothing on it, then read ahead.</p>
-<h1 id=installing-the-main-code>
-Installing the Main Code
-<a class=anchor href=#installing-the-main-code>#</a>
-</h1>
-<p>You can install the main code by writing:</p>
-<p>To install your main code you will first need to install the git installer, to do this write the following in your pi&rsquo;s terminal, (following code is for linux):</p>
-<p><code>sudo apt-get install git</code></p>
-<p>once it has finished install, type the following command in the terminal, this will install the repository to your pi:</p>
-<p><code>git clone https://github.com/ocean-perception/mobile_robotics_python</code></p>
-<p>if this does not work, please ask for a member of staff for help.</p>
-<h1 id=chrony-configuration>
-Chrony Configuration
-<a class=anchor href=#chrony-configuration>#</a>
-</h1>
-<p>Chrony is an implementation of NTP, it allows for the pi&rsquo;s to synchronize their time even if internet is not connected to one of them. It acts as a daemon in the background. So when setup it should never need to be reconfigured or edited with afterwards.</p>
-<h2 id=server-configuration-camera-system-pi>
-Server Configuration (Camera system Pi)
-<a class=anchor href=#server-configuration-camera-system-pi>#</a>
-</h2>
-<ol>
-<li>Install an editor of your choice (nano, vim, gedit), for example for <code>vim</code> you would write</li>
-</ol>
-<pre tabindex=0><code>sudo apt install vim
-</code></pre><ol start=2>
-<li>Install chrony with</li>
-</ol>
-<pre tabindex=0><code>sudo apt install chrony
-</code></pre><ol start=3>
-<li>TBD</li>
-</ol>
-<h2 id=client-configuration-student-raspberry-pi>
-Client Configuration (student Raspberry Pi)
-<a class=anchor href=#client-configuration-student-raspberry-pi>#</a>
-</h2>
-<ol>
-<li>Install an editor of your choice (nano, vim, gedit), for example for <code>vim</code> you would write</li>
-</ol>
-<pre tabindex=0><code>sudo apt install vim
-</code></pre><ol start=2>
-<li>Install chrony with</li>
-</ol>
-<pre tabindex=0><code>sudo apt install chrony
-</code></pre><ol start=4>
-<li>Find or ask the IP address of the chrony server in the local network (the wifi router network). It should be something like <code>192.168.0.X</code>, where the last <code>X</code> will change for a number 0-254.</li>
-<li>Edit chrony configuration, and add the following line at the top of the file</li>
-</ol>
-<pre tabindex=0><code>server 192.168.0.X
-</code></pre><p>where <code>X</code> has to be changed for the correct IP. The file is located at <code>/etc/chrony/chrony.conf</code>. To edit it, you will need to use <code>sudo</code>, for example:</p>
-<pre tabindex=0><code>sudo vi /etc/chrony/chrony.conf
-</code></pre><ol start=6>
-<li>Verify that you can get the updates. First restart chrony with</li>
-</ol>
-<pre tabindex=0><code>sudo systemctl restart chrony
-</code></pre><p>and now verify that chrony is using your IP by running the command</p>
-<pre tabindex=0><code>chronyc sources
-</code></pre></article>
-<footer class=book-footer>
-<div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/8c6c56a9e1256325f62fafd341de315baacc9e8a title="Last modified by Miquel Massot | Sep 6, 2022" target=_blank rel=noopener>
-<img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
-<span>Sep 6, 2022</span>
-</a>
-</div>
-<div>
-<a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/edit/main/content/pi_configuration/_index.md target=_blank rel=noopener>
-<img src=/mobile_robotics/svg/edit.svg class=book-icon alt=Edit>
-<span>Edit this page</span>
-</a>
-</div>
-</div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){if(window.getSelection().toString())return;a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
-</div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#server-configuration-camera-system-pi>Server Configuration (Camera system Pi)</a></li>
-<li><a href=#client-configuration-student-raspberry-pi>Client Configuration (student Raspberry Pi)</a></li>
-</ul>
-</nav>
-</div>
-</aside>
-</main>
-</body>
-</html>
+<label for=toc-control><img src=/mobile_robotics/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#server-configuration-camera-system-pi>Server Configuration (Camera system Pi)</a></li><li><a href=#client-configuration-student-raspberry-pi>Client Configuration (student Raspberry Pi)</a></li></ul></nav></aside></header><article class=markdown><h1 id=raspberry-pi-configuration>Raspberry Pi Configuration
+<a class=anchor href=#raspberry-pi-configuration>#</a></h1><p>In theory <em><strong>your raspberry pi&rsquo;s should be already configured</strong></em>, if so please do not go through this page.
+If your pi unfortunately got it&rsquo;s memory erased, or you were handed one with nothing on it, then read ahead.</p><h1 id=installing-the-main-code>Installing the Main Code
+<a class=anchor href=#installing-the-main-code>#</a></h1><p>You can install the main code by writing:</p><p>To install your main code you will first need to install the git installer, to do this write the following in your pi&rsquo;s terminal, (following code is for linux):</p><p><code>sudo apt-get install git</code></p><p>once it has finished install, type the following command in the terminal, this will install the repository to your pi:</p><p><code>git clone https://github.com/ocean-perception/mobile_robotics_python</code></p><p>if this does not work, please ask for a member of staff for help.</p><h1 id=chrony-configuration>Chrony Configuration
+<a class=anchor href=#chrony-configuration>#</a></h1><p>Chrony is an implementation of NTP, it allows for the pi&rsquo;s to synchronize their time even if internet is not connected to one of them. It acts as a daemon in the background. So when setup it should never need to be reconfigured or edited with afterwards.</p><h2 id=server-configuration-camera-system-pi>Server Configuration (Camera system Pi)
+<a class=anchor href=#server-configuration-camera-system-pi>#</a></h2><ol><li>Install an editor of your choice (nano, vim, gedit), for example for <code>vim</code> you would write</li></ol><pre tabindex=0><code>sudo apt install vim
+</code></pre><ol start=2><li>Install chrony with</li></ol><pre tabindex=0><code>sudo apt install chrony
+</code></pre><ol start=3><li>TBD</li></ol><h2 id=client-configuration-student-raspberry-pi>Client Configuration (student Raspberry Pi)
+<a class=anchor href=#client-configuration-student-raspberry-pi>#</a></h2><ol><li>Install an editor of your choice (nano, vim, gedit), for example for <code>vim</code> you would write</li></ol><pre tabindex=0><code>sudo apt install vim
+</code></pre><ol start=2><li>Install chrony with</li></ol><pre tabindex=0><code>sudo apt install chrony
+</code></pre><ol start=4><li>Find or ask the IP address of the chrony server in the local network (the wifi router network). It should be something like <code>192.168.0.X</code>, where the last <code>X</code> will change for a number 0-254.</li><li>Edit chrony configuration, and add the following line at the top of the file</li></ol><pre tabindex=0><code>server 192.168.0.X
+</code></pre><p>where <code>X</code> has to be changed for the correct IP. The file is located at <code>/etc/chrony/chrony.conf</code>. To edit it, you will need to use <code>sudo</code>, for example:</p><pre tabindex=0><code>sudo vi /etc/chrony/chrony.conf
+</code></pre><ol start=6><li>Verify that you can get the updates. First restart chrony with</li></ol><pre tabindex=0><code>sudo systemctl restart chrony
+</code></pre><p>and now verify that chrony is using your IP by running the command</p><pre tabindex=0><code>chronyc sources
+</code></pre></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/8c6c56a9e1256325f62fafd341de315baacc9e8a title='Last modified by Miquel Massot | Sep 6, 2022' target=_blank rel=noopener><img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
+<span>Sep 6, 2022</span></a></div><div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/edit/main/content/pi_configuration/_index.md target=_blank rel=noopener><img src=/mobile_robotics/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#server-configuration-camera-system-pi>Server Configuration (Camera system Pi)</a></li><li><a href=#client-configuration-student-raspberry-pi>Client Configuration (student Raspberry Pi)</a></li></ul></nav></div></aside></main></body></html>

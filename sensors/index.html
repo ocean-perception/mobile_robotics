@@ -1,99 +1,18 @@
-<!doctype html><html lang=en-uk dir=ltr>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Sensors #  Depending on your robots, you should have a set of 3 or 4 different sensors contemporarily receiving data about your robots location and it&rsquo;s environment. The possible sensors you may have are: magnetometer, encoders, external positioning, lidar. There might be also an option to include an accelerometer too.
-Some sensors will have a much higher reliability than others. For example, the external positioning is likely to be far more accurate than the encoders, as it is always observing the robot from a fixed, external reference frame.">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Sensors">
-<meta property="og:description" content>
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://ocean-perception.github.io/mobile_robotics/sensors/">
-<title>Sensors | Mobile Robotics documentation</title>
-<link rel=manifest href=/mobile_robotics/manifest.json>
-<link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
-<script defer src=/mobile_robotics/flexsearch.min.js></script>
-<script defer src=/mobile_robotics/en.search.min.b6059668ef2b350d9f36d1b315a376bc2e394d6797037de6a3ea0a2e9c463875.js integrity="sha256-tgWWaO8rNQ2fNtGzFaN2vC45TWeXA33mo+oKLpxGOHU=" crossorigin=anonymous></script>
-<script defer src=/mobile_robotics/sw.min.9f9f0314a35cee6ec643afeaa4a88ac163499fab5bd5713684e8fe5d39c0d88c.js integrity="sha256-n58DFKNc7m7GQ6/qpKiKwWNJn6tb1XE2hOj+XTnA2Iw=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/sensors/index.xml title="Mobile Robotics documentation">
-</head>
-<body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/mobile_robotics/><img src=/mobile_robotics/logo.png alt=Logo><span>Mobile Robotics documentation</span>
-</a>
-</h2>
-<div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
-</div>
-</nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div>
-</aside>
-<div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/mobile_robotics/svg/menu.svg class=book-icon alt=Menu>
-</label>
+<!doctype html><html lang=en-uk dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Sensors # Depending on your robots, you should have a set of 3 or 4 different sensors contemporarily receiving data about your robots location and it&rsquo;s environment. The possible sensors you may have are: magnetometer, encoders, external positioning, lidar. There might be also an option to include an accelerometer too.
+Some sensors will have a much higher reliability than others. For example, the external positioning is likely to be far more accurate than the encoders, as it is always observing the robot from a fixed, external reference frame."><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Sensors"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="http://ocean-perception.github.io/mobile_robotics/sensors/"><title>Sensors | Mobile Robotics documentation</title><link rel=manifest href=/mobile_robotics/manifest.json><link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon><link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous><script defer src=/mobile_robotics/flexsearch.min.js></script>
+<script defer src=/mobile_robotics/en.search.min.8acf1e284e402f98012387e117341d6ce89ff07526a8ed5d7dbda668fb9f861c.js integrity="sha256-is8eKE5AL5gBI4fhFzQdbOif8HUmqO1dfb2maPufhhw=" crossorigin=anonymous></script>
+<script defer src=/mobile_robotics/sw.min.6c62faa43e063351bb8db857ed6743bc77e390d2df184c1171b023c4fbfbe0c0.js integrity="sha256-bGL6pD4GM1G7jbhX7WdDvHfjkNLfGEwRcbAjxPv74MA=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/sensors/index.xml title="Mobile Robotics documentation"></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/mobile_robotics/><img src=/mobile_robotics/logo.png alt=Logo><span>Mobile Robotics documentation</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/mobile_robotics/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Sensors</strong>
-<label for=toc-control>
-<img src=/mobile_robotics/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div>
-<aside class="hidden clearfix">
-<nav id=TableOfContents>
-<ul>
-<li><a href=#sensor-code-structure>Sensor Code Structure</a></li>
-</ul>
-<ul>
-<li><a href=#lidar>Lidar</a></li>
-<li><a href=#external-localisation>External Localisation</a></li>
-<li><a href=#rotary-encoders>Rotary Encoders</a></li>
-<li><a href=#compassmagnetometer>Compass/magnetometer</a></li>
-</ul>
-</nav>
-</aside>
-</header>
-<article class=markdown><h1 id=sensors>
-Sensors
-<a class=anchor href=#sensors>#</a>
-</h1>
-<p>Depending on your robots, you should have a set of 3 or 4 different sensors contemporarily receiving data about your robots location and it&rsquo;s environment. The possible sensors you may have are: magnetometer, encoders, external positioning, lidar.
-There might be also an option to include an accelerometer too.</p>
-<p>Some sensors will have a much higher reliability than others. For example, the external positioning is likely to be far more accurate than the encoders, as it is always observing the robot from a fixed, external reference frame.</p>
-<p>The encoders, even if the easiest to code, as there is a continuous and simple feedback about the motor distance; can be thought to be not as reliable as they have to work on the no-slip assumption. On the current code, an assumption about their turn radius has also been made. Causing a slight variance if the robot actually has a turn radius which differs from the one assumed.</p>
-<p>For more information about how the main body of code incorporates the code, proceed to the programming section</p>
-<h2 id=sensor-code-structure>
-Sensor Code Structure
-<a class=anchor href=#sensor-code-structure>#</a>
-</h2>
-<p>The code was made in order to attempt to make the combination of information between the sensors as easily as possible</p>
-<p>To do this, a structure, seen below was created.</p>
-<p>
-<img src=static/instance.png alt=instance></p>
-<p>The BaseLoggable class, creates separate message format that both sensors and motors (actuators) will inherit, (and records everything that is sensed or occurred). The sensors class will then configure the sensor by using the <em>YAML</em> file.</p>
-<p>Working through the tree, the BaseLogger class logs any data it receives, and initially sets the message format for both the BaseSensor and Motors. The BaseSensor the configuration of the sensor, (given in the yaml file), and will configure the correct message type, driver etc.. to the current sensor being recorded. Finally the Sensor records the data, given the message structure and driver.</p>
-<h1 id=sensors-1>
-Sensors
-<a class=anchor href=#sensors-1>#</a>
-</h1>
-<h2 id=lidar>
-Lidar
-<a class=anchor href=#lidar>#</a>
-</h2>
-<p>The lidar works by via laser triangulation. It releases very fast pulses of light toward a target and measures the amount of time it takes for the light to travel back.
-The message will be saved in the form of:</p>
-<pre tabindex=0><code>def log_scan(self, msg: LaserScanMessage):
-        &quot;&quot;&quot;Log the sensor data to disk.&quot;&quot;&quot;
+<label for=toc-control><img src=/mobile_robotics/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#sensor-code-structure>Sensor Code Structure</a></li></ul><ul><li><a href=#lidar>Lidar</a></li><li><a href=#external-localisation>External Localisation</a></li><li><a href=#rotary-encoders>Rotary Encoders</a></li><li><a href=#compassmagnetometer>Compass/magnetometer</a></li></ul></nav></aside></header><article class=markdown><h1 id=sensors>Sensors
+<a class=anchor href=#sensors>#</a></h1><p>Depending on your robots, you should have a set of 3 or 4 different sensors contemporarily receiving data about your robots location and it&rsquo;s environment. The possible sensors you may have are: magnetometer, encoders, external positioning, lidar.
+There might be also an option to include an accelerometer too.</p><p>Some sensors will have a much higher reliability than others. For example, the external positioning is likely to be far more accurate than the encoders, as it is always observing the robot from a fixed, external reference frame.</p><p>The encoders, even if the easiest to code, as there is a continuous and simple feedback about the motor distance; can be thought to be not as reliable as they have to work on the no-slip assumption. On the current code, an assumption about their turn radius has also been made. Causing a slight variance if the robot actually has a turn radius which differs from the one assumed.</p><p>For more information about how the main body of code incorporates the code, proceed to the programming section</p><h2 id=sensor-code-structure>Sensor Code Structure
+<a class=anchor href=#sensor-code-structure>#</a></h2><p>The code was made in order to attempt to make the combination of information between the sensors as easily as possible</p><p>To do this, a structure, seen below was created.</p><p><img src=static/instance.png alt=instance></p><p>The BaseLoggable class, creates separate message format that both sensors and motors (actuators) will inherit, (and records everything that is sensed or occurred). The sensors class will then configure the sensor by using the <em>YAML</em> file.</p><p>Working through the tree, the BaseLogger class logs any data it receives, and initially sets the message format for both the BaseSensor and Motors. The BaseSensor the configuration of the sensor, (given in the yaml file), and will configure the correct message type, driver etc.. to the current sensor being recorded. Finally the Sensor records the data, given the message structure and driver.</p><h1 id=sensors-1>Sensors
+<a class=anchor href=#sensors-1>#</a></h1><h2 id=lidar>Lidar
+<a class=anchor href=#lidar>#</a></h2><p>The lidar works by via laser triangulation. It releases very fast pulses of light toward a target and measures the amount of time it takes for the light to travel back.
+The message will be saved in the form of:</p><pre tabindex=0><code>def log_scan(self, msg: LaserScanMessage):
+        &#34;&#34;&#34;Log the sensor data to disk.&#34;&#34;&#34;
         self.logger.log(
             msg.stamp_s,
             msg.angle_min_rad,
@@ -105,18 +24,8 @@ The message will be saved in the form of:</p>
             str(msg.intensities),
             str(msg.angles),
         )
-</code></pre><p>Here is an example scan that the lidar made of it&rsquo;s surrounding space in an office.</p>
-<p>
-<img src=static/videos/rplidar.gif alt=rplidar></p>
-<p>Of course the information is still contains a fair amount of noise, as students, you will have to filter the information to then be able to use it in order to understand where the robot is with respect to neighbouring walls and maybe other rovers.</p>
-<h2 id=external-localisation>
-External Localisation
-<a class=anchor href=#external-localisation>#</a>
-</h2>
-<p>The external localisation is a way to simulate gps or other external positioning methods by using camera vision. The camera recognises the tags, and to due to the nature and distinctiveness of the tags, it is able to very effectively understand both the position and rotation of the tags.</p>
-<p>
-<img src=static/videos/aruco_example.gif alt=aruco_example></p>
-<pre tabindex=0><code>def read(self) -&gt; RobotStateMessage:
+</code></pre><p>Here is an example scan that the lidar made of it&rsquo;s surrounding space in an office.</p><p><img src=static/videos/rplidar.gif alt=rplidar></p><p>Of course the information is still contains a fair amount of noise, as students, you will have to filter the information to then be able to use it in order to understand where the robot is with respect to neighbouring walls and maybe other rovers.</p><h2 id=external-localisation>External Localisation
+<a class=anchor href=#external-localisation>#</a></h2><p>The external localisation is a way to simulate gps or other external positioning methods by using camera vision. The camera recognises the tags, and to due to the nature and distinctiveness of the tags, it is able to very effectively understand both the position and rotation of the tags.</p><p><img src=static/videos/aruco_example.gif alt=aruco_example></p><pre tabindex=0><code>def read(self) -&gt; RobotStateMessage:
         # TODO convert self.data to RobotStateMessage
         msg = RobotStateMessage()
         if self.data is None:
@@ -129,52 +38,8 @@ External Localisation
         msg.pitch_rad = self.data[6]
         msg.yaw_rad = self.data[7]
         return msg
-</code></pre><h2 id=rotary-encoders>
-Rotary Encoders
-<a class=anchor href=#rotary-encoders>#</a>
-</h2>
-<p>The encoders are electromechanical devices that detects the angular position or motion of a shaft. The Pi-top was configured in such a way that the encoders return angle travelled. As a result the velocity calculated won&rsquo;t be as accurate as other sensors.</p>
-<h2 id=compassmagnetometer>
-Compass/magnetometer
-<a class=anchor href=#compassmagnetometer>#</a>
-</h2>
-<p>The magnetometer is a device that measures magnetic field. This sensor will return the yaw of the vessel or vehicle.</p>
-</article>
-<footer class=book-footer>
-<div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/8c6c56a9e1256325f62fafd341de315baacc9e8a title="Last modified by Miquel Massot | Sep 6, 2022" target=_blank rel=noopener>
-<img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
-<span>Sep 6, 2022</span>
-</a>
-</div>
-<div>
-<a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/edit/main/content/sensors/_index.md target=_blank rel=noopener>
-<img src=/mobile_robotics/svg/edit.svg class=book-icon alt=Edit>
-<span>Edit this page</span>
-</a>
-</div>
-</div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){if(window.getSelection().toString())return;a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
-</div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#sensor-code-structure>Sensor Code Structure</a></li>
-</ul>
-<ul>
-<li><a href=#lidar>Lidar</a></li>
-<li><a href=#external-localisation>External Localisation</a></li>
-<li><a href=#rotary-encoders>Rotary Encoders</a></li>
-<li><a href=#compassmagnetometer>Compass/magnetometer</a></li>
-</ul>
-</nav>
-</div>
-</aside>
-</main>
-</body>
-</html>
+</code></pre><h2 id=rotary-encoders>Rotary Encoders
+<a class=anchor href=#rotary-encoders>#</a></h2><p>The encoders are electromechanical devices that detects the angular position or motion of a shaft. The Pi-top was configured in such a way that the encoders return angle travelled. As a result the velocity calculated won&rsquo;t be as accurate as other sensors.</p><h2 id=compassmagnetometer>Compass/magnetometer
+<a class=anchor href=#compassmagnetometer>#</a></h2><p>The magnetometer is a device that measures magnetic field. This sensor will return the yaw of the vessel or vehicle.</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/8c6c56a9e1256325f62fafd341de315baacc9e8a title='Last modified by Miquel Massot | Sep 6, 2022' target=_blank rel=noopener><img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
+<span>Sep 6, 2022</span></a></div><div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/edit/main/content/sensors/_index.md target=_blank rel=noopener><img src=/mobile_robotics/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#sensor-code-structure>Sensor Code Structure</a></li></ul><ul><li><a href=#lidar>Lidar</a></li><li><a href=#external-localisation>External Localisation</a></li><li><a href=#rotary-encoders>Rotary Encoders</a></li><li><a href=#compassmagnetometer>Compass/magnetometer</a></li></ul></nav></div></aside></main></body></html>

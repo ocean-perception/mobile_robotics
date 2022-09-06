@@ -1,124 +1,21 @@
-<!doctype html><html lang=en-uk dir=ltr>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Programming #  Setting Up #  Now that you have tested that the robot functions correctly. We will begin to go through the main body of code that you will be using throughout your project. It is highly suggested to install VS code, (a code editor like spyder and Jupyter Notebook), as it will show all the python files that you need to work with on the side.
-Both the Land Rover and the Robotic vessel will use the same code.">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Programming">
-<meta property="og:description" content>
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://ocean-perception.github.io/mobile_robotics/programming/">
-<title>Programming | Mobile Robotics documentation</title>
-<link rel=manifest href=/mobile_robotics/manifest.json>
-<link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
-<script defer src=/mobile_robotics/flexsearch.min.js></script>
-<script defer src=/mobile_robotics/en.search.min.b6059668ef2b350d9f36d1b315a376bc2e394d6797037de6a3ea0a2e9c463875.js integrity="sha256-tgWWaO8rNQ2fNtGzFaN2vC45TWeXA33mo+oKLpxGOHU=" crossorigin=anonymous></script>
-<script defer src=/mobile_robotics/sw.min.9f9f0314a35cee6ec643afeaa4a88ac163499fab5bd5713684e8fe5d39c0d88c.js integrity="sha256-n58DFKNc7m7GQ6/qpKiKwWNJn6tb1XE2hOj+XTnA2Iw=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/programming/index.xml title="Mobile Robotics documentation">
-</head>
-<body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/mobile_robotics/><img src=/mobile_robotics/logo.png alt=Logo><span>Mobile Robotics documentation</span>
-</a>
-</h2>
-<div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
-</div>
-</nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div>
-</aside>
-<div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/mobile_robotics/svg/menu.svg class=book-icon alt=Menu>
-</label>
+<!doctype html><html lang=en-uk dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Programming # Setting Up # Now that you have tested that the robot functions correctly. We will begin to go through the main body of code that you will be using throughout your project. It is highly suggested to install VS code, (a code editor like spyder and Jupyter Notebook), as it will show all the python files that you need to work with on the side.
+Both the Land Rover and the Robotic vessel will use the same code."><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Programming"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="http://ocean-perception.github.io/mobile_robotics/programming/"><title>Programming | Mobile Robotics documentation</title><link rel=manifest href=/mobile_robotics/manifest.json><link rel=icon href=/mobile_robotics/favicon.png type=image/x-icon><link rel=stylesheet href=/mobile_robotics/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous><script defer src=/mobile_robotics/flexsearch.min.js></script>
+<script defer src=/mobile_robotics/en.search.min.8acf1e284e402f98012387e117341d6ce89ff07526a8ed5d7dbda668fb9f861c.js integrity="sha256-is8eKE5AL5gBI4fhFzQdbOif8HUmqO1dfb2maPufhhw=" crossorigin=anonymous></script>
+<script defer src=/mobile_robotics/sw.min.6c62faa43e063351bb8db857ed6743bc77e390d2df184c1171b023c4fbfbe0c0.js integrity="sha256-bGL6pD4GM1G7jbhX7WdDvHfjkNLfGEwRcbAjxPv74MA=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=http://ocean-perception.github.io/mobile_robotics/programming/index.xml title="Mobile Robotics documentation"></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/mobile_robotics/><img src=/mobile_robotics/logo.png alt=Logo><span>Mobile Robotics documentation</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/mobile_robotics/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Programming</strong>
-<label for=toc-control>
-<img src=/mobile_robotics/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div>
-<aside class="hidden clearfix">
-<nav id=TableOfContents>
-<ul>
-<li><a href=#setting-up>Setting Up</a></li>
-<li><a href=#folder-introduction>Folder Introduction</a>
-<ul>
-<li><a href=#simplified-model-of-structure>Simplified model of structure</a></li>
-</ul>
-</li>
-<li><a href=#sensing>Sensing</a></li>
-<li><a href=#thinking>Thinking</a>
-<ul>
-<li><a href=#editing-localisationpy>Editing localisation.py</a></li>
-<li><a href=#editing-configurationyaml>Editing configuration.yaml</a></li>
-</ul>
-</li>
-<li><a href=#acting>Acting</a></li>
-</ul>
-</nav>
-</aside>
-</header>
-<article class=markdown><h1 id=programming>
-Programming
-<a class=anchor href=#programming>#</a>
-</h1>
-<h2 id=setting-up>
-Setting Up
-<a class=anchor href=#setting-up>#</a>
-</h2>
-<p>Now that you have tested that the robot functions correctly. We will begin to go through the main body of code that you will be using throughout your project.
-It is highly suggested to install VS code, (a code editor like spyder and Jupyter Notebook), as it will show all the python files that you need to work with on the side.</p>
-<p>Both the Land Rover and the Robotic vessel will use the same code. Depending on your robot, you will need to configure it in the &ldquo;configuration.yaml&rdquo; file.</p>
-<p>The installation will take you to a github repository. To install, click on the code button then install the code by clicking the &lsquo;download zip&rsquo; in the dropdown menu</p>
-<p>
-<a href=https://code.visualstudio.com/Download target=_blank rel=noopener class=book-btn>
-Install VSCode
-</a>
-<a href=https://github.com/ocean-perception/mobile_robotics_python target=_blank rel=noopener class=book-btn>
-Main Code
-</a>
-</p>
-<p>
-<img src=static/github_repo.png alt=github_repo></p>
-<p>Once installed, extract the folder and open mobile_robotics_python in vs code within mobile_robotics_python-main/mobile_robotics_python-main/src open the folder mobile_robotics_python. Once opened the folder should look something like this:
-<img src=static/initial_folder.png alt=initial_folder></p>
-<h2 id=folder-introduction>
-Folder Introduction
-<a class=anchor href=#folder-introduction>#</a>
-</h2>
-<p>This folder will be where you will write your code throughout the project. Although the code might look a little intimidating at first. Most of the files within the folder will work in the background and therefore will not need to be tampered with.</p>
-<p>The objective of your course will be to create new localization_solutions and navigations_solutions so that the robot is able to navigate autonomously to its best ability. Here below you can see what the current code should do with basic localisation and navigation code.</p>
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://player.vimeo.com/video/740325079 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-<h3 id=simplified-model-of-structure>
-Simplified model of structure
-<a class=anchor href=#simplified-model-of-structure>#</a>
-</h3>
-<p>When the the code is run, it will got through the main loop within robot.py. In simple words it goes in a &lsquo;sense, think, act&rsquo; loop.</p>
-<p>
-<img src=static/sensethinkact.png alt="simplified model"></p>
-<p>as you can see in the python page, within the loop:</p>
-<pre tabindex=0><code>while not self.mission_control.finished:
+<label for=toc-control><img src=/mobile_robotics/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#setting-up>Setting Up</a></li><li><a href=#folder-introduction>Folder Introduction</a><ul><li><a href=#simplified-model-of-structure>Simplified model of structure</a></li></ul></li><li><a href=#sensing>Sensing</a></li><li><a href=#thinking>Thinking</a><ul><li><a href=#editing-localisationpy>Editing localisation.py</a></li><li><a href=#editing-configurationyaml>Editing configuration.yaml</a></li></ul></li><li><a href=#acting>Acting</a></li></ul></nav></aside></header><article class=markdown><h1 id=programming>Programming
+<a class=anchor href=#programming>#</a></h1><h2 id=setting-up>Setting Up
+<a class=anchor href=#setting-up>#</a></h2><p>Now that you have tested that the robot functions correctly. We will begin to go through the main body of code that you will be using throughout your project.
+It is highly suggested to install VS code, (a code editor like spyder and Jupyter Notebook), as it will show all the python files that you need to work with on the side.</p><p>Both the Land Rover and the Robotic vessel will use the same code. Depending on your robot, you will need to configure it in the &ldquo;configuration.yaml&rdquo; file.</p><p>The installation will take you to a github repository. To install, click on the code button then install the code by clicking the &lsquo;download zip&rsquo; in the dropdown menu</p><p><a href=https://code.visualstudio.com/Download target=_blank rel=noopener class=book-btn>Install VSCode</a>
+<a href=https://github.com/ocean-perception/mobile_robotics_python target=_blank rel=noopener class=book-btn>Main Code</a></p><p><img src=static/github_repo.png alt=github_repo></p><p>Once installed, extract the folder and open mobile_robotics_python in vs code within mobile_robotics_python-main/mobile_robotics_python-main/src open the folder mobile_robotics_python. Once opened the folder should look something like this:
+<img src=static/initial_folder.png alt=initial_folder></p><h2 id=folder-introduction>Folder Introduction
+<a class=anchor href=#folder-introduction>#</a></h2><p>This folder will be where you will write your code throughout the project. Although the code might look a little intimidating at first. Most of the files within the folder will work in the background and therefore will not need to be tampered with.</p><p>The objective of your course will be to create new localization_solutions and navigations_solutions so that the robot is able to navigate autonomously to its best ability. Here below you can see what the current code should do with basic localisation and navigation code.</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://player.vimeo.com/video/740325079 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><h3 id=simplified-model-of-structure>Simplified model of structure
+<a class=anchor href=#simplified-model-of-structure>#</a></h3><p>When the the code is run, it will got through the main loop within robot.py. In simple words it goes in a &lsquo;sense, think, act&rsquo; loop.</p><p><img src=static/sensethinkact.png alt="simplified model"></p><p>as you can see in the python page, within the loop:</p><pre tabindex=0><code>while not self.mission_control.finished:
 </code></pre><p>there is the 3 steps:
-First the code records all its sensors (it will vary depending on your robot):</p>
-<h2 id=sensing>
-Sensing
-<a class=anchor href=#sensing>#</a>
-</h2>
-<pre tabindex=0><code>            measurements = []
+First the code records all its sensors (it will vary depending on your robot):</p><h2 id=sensing>Sensing
+<a class=anchor href=#sensing>#</a></h2><pre tabindex=0><code>            measurements = []
             if self.compass is not None:
                 msg = self.compass.read()
                 measurements.append(msg)
@@ -126,92 +23,13 @@ Sensing
                 self.encoder.yaw_rad = self.compass.yaw_rad
                 msg = self.encoder.read()
                 measurements.append(msg)
-</code></pre><p>you may now change these variables based upon what robot you have:</p>
-<p>If you have the Pitop, it might be useful to record the <strong>compass</strong>, <strong>encoder</strong>, <strong>lidar</strong> and <strong>external_positioning</strong></p>
-<p>If you have the robotic vessel, it might be useful to record the <strong>encoder</strong>, <strong>accelerometer</strong>, <strong>magnetometer</strong> and <strong>external_positioning</strong></p>
-<h2 id=thinking>
-Thinking
-<a class=anchor href=#thinking>#</a>
-</h2>
-<p>Once the robot has updated all the sensor data, it will use the information in order to understand it&rsquo;s current location. At the moment the code is using a simple &lsquo;dead_reckoning&rsquo; algorithm. You may find the file inside the location_solutions folder</p>
-<pre tabindex=0><code>          if len(measurements) &gt; 0:
+</code></pre><p>you may now change these variables based upon what robot you have:</p><p>If you have the Pitop, it might be useful to record the <strong>compass</strong>, <strong>encoder</strong>, <strong>lidar</strong> and <strong>external_positioning</strong></p><p>If you have the robotic vessel, it might be useful to record the <strong>encoder</strong>, <strong>accelerometer</strong>, <strong>magnetometer</strong> and <strong>external_positioning</strong></p><h2 id=thinking>Thinking
+<a class=anchor href=#thinking>#</a></h2><p>Once the robot has updated all the sensor data, it will use the information in order to understand it&rsquo;s current location. At the moment the code is using a simple &lsquo;dead_reckoning&rsquo; algorithm. You may find the file inside the location_solutions folder</p><pre tabindex=0><code>          if len(measurements) &gt; 0:
             for measurement in sorted(measurements, key=lambda m: m.stamp_s):
               self.state = self.localisation.update(measurement)
-
-</code></pre><p>Create a new file in the same location_solution folder, name it (***.py), then once you have finished the code within, you will have to change configurations to use that file instead of dead reckoning as so:</p>
-<h3 id=editing-localisationpy>
-Editing localisation.py
-<a class=anchor href=#editing-localisationpy>#</a>
-</h3>
-<p>Add another if statement in the localisation.py file in the mobile_robotics, (main) folder. This file directs the robot function to the appropriate localisation_solution by reading the configuration.yaml file.</p>
-<p>
-<img src=static/localisation_setup.png alt="location setup">
-<blockquote class="book-hint info">
-Remember, if you want to follow the same structure, you will need to have a predict and update function within your new localization solution. For example, you may choose to implement the location predictions within the main robot loop, (as it isn&rsquo;t currently being utilized).
-</blockquote>
-</p>
-<h3 id=editing-configurationyaml>
-Editing configuration.yaml
-<a class=anchor href=#editing-configurationyaml>#</a>
-</h3>
-<p>Change the driver of localization within the configuration.yaml file, (found in the configuration folder). All files refer to this yaml in order to understand which file is to be implemented. In future you may want to change some of the offsets within the file as its likely that there is an offset between your sensors, motors and the centre of the robot.
-<blockquote class="book-hint info">
-You will also be able to change the configuration of your robot. Aka changing your configuration to the correct encoder drivers and compass/magnetometer depending on if you are using the robotic vessel or pitop.
-</blockquote>
-<img src=static/location_within_yaml.png alt="location within yaml"></p>
-<blockquote class="book-hint warning">
-Now that you have learned a little more about the configuration yaml and the main robot function. Try creating a new waypoint mission yourself and changing the configuration.yaml !
-</blockquote>
-<h2 id=acting>
-Acting
-<a class=anchor href=#acting>#</a>
-</h2>
-<p>The current navigation solution, <code>naive_robot_move.py</code> has a very basic and naive navigation algorithm. You will have to develop your own which is a little smarter, in which it can react upon its current situation, (both long and short term). An example of this, is if there is an obstacle between the robot and it&rsquo;s current waypoint.</p>
-<p>The current solution simply computes the difference between its current position and the waypoint and will move the motors accordingly. As you may observe in this video, if the robot accidentally misses it&rsquo;s waypoint threshold, it will simply carry on.</p>
-<p>Similarly to what you did for the thinking section, you will need to create a new python file inside the folder called navigations_solutions. You will then need to edit both your configuration.yaml file and within <code>navigation.py</code> in order to follow your new navigation solution &ldquo;***.py&rdquo;, instead of the naive_robot_move.py</p>
-</article>
-<footer class=book-footer>
-<div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/8c6c56a9e1256325f62fafd341de315baacc9e8a title="Last modified by Miquel Massot | Sep 6, 2022" target=_blank rel=noopener>
-<img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
-<span>Sep 6, 2022</span>
-</a>
-</div>
-<div>
-<a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/edit/main/content/programming/_index.md target=_blank rel=noopener>
-<img src=/mobile_robotics/svg/edit.svg class=book-icon alt=Edit>
-<span>Edit this page</span>
-</a>
-</div>
-</div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){if(window.getSelection().toString())return;a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
-</div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#setting-up>Setting Up</a></li>
-<li><a href=#folder-introduction>Folder Introduction</a>
-<ul>
-<li><a href=#simplified-model-of-structure>Simplified model of structure</a></li>
-</ul>
-</li>
-<li><a href=#sensing>Sensing</a></li>
-<li><a href=#thinking>Thinking</a>
-<ul>
-<li><a href=#editing-localisationpy>Editing localisation.py</a></li>
-<li><a href=#editing-configurationyaml>Editing configuration.yaml</a></li>
-</ul>
-</li>
-<li><a href=#acting>Acting</a></li>
-</ul>
-</nav>
-</div>
-</aside>
-</main>
-</body>
-</html>
+</code></pre><p>Create a new file in the same location_solution folder, name it (***.py), then once you have finished the code within, you will have to change configurations to use that file instead of dead reckoning as so:</p><h3 id=editing-localisationpy>Editing localisation.py
+<a class=anchor href=#editing-localisationpy>#</a></h3><p>Add another if statement in the localisation.py file in the mobile_robotics, (main) folder. This file directs the robot function to the appropriate localisation_solution by reading the configuration.yaml file.</p><p><img src=static/localisation_setup.png alt="location setup"><blockquote class="book-hint info">Remember, if you want to follow the same structure, you will need to have a predict and update function within your new localization solution. For example, you may choose to implement the location predictions within the main robot loop, (as it isn&rsquo;t currently being utilized).</blockquote></p><h3 id=editing-configurationyaml>Editing configuration.yaml
+<a class=anchor href=#editing-configurationyaml>#</a></h3><p>Change the driver of localization within the configuration.yaml file, (found in the configuration folder). All files refer to this yaml in order to understand which file is to be implemented. In future you may want to change some of the offsets within the file as its likely that there is an offset between your sensors, motors and the centre of the robot.<blockquote class="book-hint info">You will also be able to change the configuration of your robot. Aka changing your configuration to the correct encoder drivers and compass/magnetometer depending on if you are using the robotic vessel or pitop.</blockquote><img src=static/location_within_yaml.png alt="location within yaml"></p><blockquote class="book-hint warning">Now that you have learned a little more about the configuration yaml and the main robot function. Try creating a new waypoint mission yourself and changing the configuration.yaml !</blockquote><h2 id=acting>Acting
+<a class=anchor href=#acting>#</a></h2><p>The current navigation solution, <code>naive_robot_move.py</code> has a very basic and naive navigation algorithm. You will have to develop your own which is a little smarter, in which it can react upon its current situation, (both long and short term). An example of this, is if there is an obstacle between the robot and it&rsquo;s current waypoint.</p><p>The current solution simply computes the difference between its current position and the waypoint and will move the motors accordingly. As you may observe in this video, if the robot accidentally misses it&rsquo;s waypoint threshold, it will simply carry on.</p><p>Similarly to what you did for the thinking section, you will need to create a new python file inside the folder called navigations_solutions. You will then need to edit both your configuration.yaml file and within <code>navigation.py</code> in order to follow your new navigation solution &ldquo;***.py&rdquo;, instead of the naive_robot_move.py</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/commit/8c6c56a9e1256325f62fafd341de315baacc9e8a title='Last modified by Miquel Massot | Sep 6, 2022' target=_blank rel=noopener><img src=/mobile_robotics/svg/calendar.svg class=book-icon alt=Calendar>
+<span>Sep 6, 2022</span></a></div><div><a class="flex align-center" href=https://github.com/ocean-perception/mobile_robotics/edit/main/content/programming/_index.md target=_blank rel=noopener><img src=/mobile_robotics/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#setting-up>Setting Up</a></li><li><a href=#folder-introduction>Folder Introduction</a><ul><li><a href=#simplified-model-of-structure>Simplified model of structure</a></li></ul></li><li><a href=#sensing>Sensing</a></li><li><a href=#thinking>Thinking</a><ul><li><a href=#editing-localisationpy>Editing localisation.py</a></li><li><a href=#editing-configurationyaml>Editing configuration.yaml</a></li></ul></li><li><a href=#acting>Acting</a></li></ul></nav></div></aside></main></body></html>

@@ -1,1 +1,0 @@
-navigator.serviceWorker&&navigator.serviceWorker.register("/mobile_robotics/sw.js",{scope:"/mobile_robotics/"})
