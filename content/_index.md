@@ -9,18 +9,15 @@ bookFlatSection: true
 
 
 ## What is this module about?
-This module introduces the theoretical and practical design of maritime robotics systems such as autonomous underwater and surface vehicles (AUVs, ASVs).
+This module introduces the theoretical and practical design of robotic systems such as autonomous robots, underwater and surface vehicles (AUVs, ASVs).
 
-Students will be introduced to the theoretical principles underlying their design including aspects of guidance, navigation and control, modelling and simulation. The module aims to provide the students with the skills required to design, build and deploy simple robotic systems.
+You will be introduced to the theoretical principles underlying their design including aspects of guidance, navigation and control, modelling and simulation. The module aims to provide you with the skills required to design, build and deploy simple robotic systems.
 
 
 ## What will you be able to do after you finish it?
-
-
-Design, develop and build, as a team, a demonstrator maritime robotic system for testing and evaluation. (Contributing to EAB accreditation LOs: D8, D11, P3, G1, G4, P12)
+Design, develop and build, as a team, a demonstrator robotic system for testing and evaluation. (Contributing to EAB accreditation LOs: D8, D11, P3, G1, G4, P12)
 
 ## Your Robot Layout
-
 Click on the side-bar for more information on your specific robot. Depending on your course, you will be using 1 of 3 possible robots:
 
 {{< columns >}}
